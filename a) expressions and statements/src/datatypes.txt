@@ -231,7 +231,16 @@ When is L required
 Or we will always get the error 'Integer number is too large'
 
 ---------------------------------------------------------------------------------------------------------------------
+ Java is also smart, when it comes to converting numbers, from an int data type to something smaller, like a short
+ type. Java can determine if the numeric literal value we´re going to use, is not going to fit into the short variable.
 
+short bigShortLiteral = 32768;
+error: incompatible types: possible lossy convertion from int to short
+
+- "incompatible types". It requires a short, but found an int and the value of the int doesn´t fit into a short
+data type(whose max value is 32.767)
+
+==============================================================================================================================
 
 
 
