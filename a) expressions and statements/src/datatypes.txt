@@ -438,6 +438,14 @@ in the first part of the equation(50000L), so in this instance, the result is a 
 but what if we wanted to do something similar to a short?
 
 --------------------------------------------------------------------------------------------------------------------------
+short shortTotal = (1000 + 10 * (byteValue + shortValue + intValue));
+error: possible lossy convertion from int to short
+
+short shortTotal = (short)(1000 + 10 * (byteValue + shortValue + intValue)); (now it works)
+
+The point of this, after solving the challenge, was to suggest that integer is the best primitive data type for whole numbers
+generally. But even if you´re using type long, you saw that Java handles a lot of the complexity for you, and you don´t need
+to do this casting with a long
 
 
 
