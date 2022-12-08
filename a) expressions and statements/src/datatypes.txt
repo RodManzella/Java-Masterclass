@@ -104,8 +104,144 @@ error
 
 - The minimum value, when it underflows, wraps around to the maximum value, and continues processing
 
--This is not usually behavior that you want, and as a developer, you need to be aware that this can happen, and choose the appropriate data
-type.
+-This is not usually behavior that you want, and as a developer, you need to be aware that this can happen, 
+and choose the appropriate data type.
+
+--------------------------------------------------------------------------------------------------------------------------
+When will you get and overflow? When will you get an error?
+
+-An integer wraparound event, either an overflow or underlow, can occur in java when you are using expressions
+that are not a simple literal value
+
+- The java compiler doesn´t attempt to evaluate the expression to determine its value, so it DOES NOT give you an error
+
+
+-Here are two more examples that will compile, and result in an overflow. 
+int thisWillCompile =  (Integer.MAX_VALUE + 1);
+int thisWillCompile = (2147483647 + 1);
+
+
+- If you assign a numeric literal value to a data type that is outside of the range, the compiler DOES give you and error
+int thisWontCompile = 2147483648;
+-----------------------------------------------------------------------------------------------------------------------
+What does an underscore mean in a numeric literal?
+
+In java, you cannot put commas in a numeric literal.
+
+int myMaxIntTest = 2,147,483,647;
+
+-So Java provided an alternative way to improve readability, the underscore.
+
+int myMaxIntTest = 2_147_483_647;
+
+==============================================================================================================================
+
+We´ll take a look at the other three whole number primitive data types besides the int(byte, short and long)
+
+byte| Byte | Has the smallest range
+
+short| Short | .................
+
+int| Integer |Java´s default data type for whole numbers
+
+long | Long | Has the largest range
+
+----------------------------------------------------------------------------------------------------------
+ byte Value Range(-128 to 127)
+
+ -A smaller data type takes up less space and can be quicker to acess. However this is less of a concern today
+ because of speed of modern computers, but certainly was a factor when Java was first created
+
+ -Another reason to use a byte instead of an int is if you wanted to document that you are only expecting or using
+ a small range of values
+
+ ----------------------------------------------------------------------------------------------------------------
+
+short Value Range(-32768 to 32767)
+(overflow and underflow works the same way)
+------------------------------------------------------------------------------------------------------------
+Size of Primitive Types and Width
+
+- Size or Width, is the amount of space that determines(or limits) the range of values we´ve been discussing
+
+A byte, can store 256 numbers and occupies eight bits, and has a width of 8.
+
+A short can store a large range of numbers and occupies 16 bits, and has a width of 16
+
+An int, has a much larger range as we know, and occupies 32 bits, and has a width of 32 (Integer.SIZE)
+
+-------------------------------------------------------------------------------------------------------------------
+long myLongValue = 100;
+
+-The number 100 by default, is an int.
+
+- Java allows certain numeric literals to have a suffix appended to the value, to force it to be a different data type
+from the default type.
+
+- The long is one of these types and it´s suffix is an 'L'.
+
+- This is one of the few instances that java is not case sensitive, a lowercase 'l' or an uppercase 'L'
+at the end of a whole number mean the same thing - the number is a long
+
+- When you are assigning a long literal value to a variable, you need to put the letter L on the end of it, and it tells
+the computer that it´s a long Value. Java will default literal whole numbers to be integer data types
+
+- so in this line "long myLongValue = 100;" 100 is really an int being assigned to a long variable type
+
+- Let´s make it more clear for the people that will be reading our code
+
+- long myLongValue = 100L
+
+- long has a width of 64
+
+System.out.println("A long has a width of "+ Long.SIZE);
+output: A long has a width of 64  (2 ^64)
+-----------------------------------------------------------------------------------------------------------------------
+
+How big is the difference between int and long?
+
+- The long has the same type of overflow and underflow problem (same for every data type)
+
+- The 'L' character lets Java know , you really did mean for the number to be treated as a long
+
+- It turns out, in some circumstances, we don´t have to use the L suffix
+
+let´s assign the value of 100 to myLongValue but without using the L suffix this this thisWillCompile
+
+ - myLongValue = 100;
+
+The reason this works is that an int will always fit into a long data type, because a long is thisWillCompile
+it´s width, so Java is smart enough to know that. Java will convert an int to a long, instead of giving us
+an error. BUT if we try to type in a literal value, for a number that is bigger than an int can handle, without
+the long sufix 'L' we´ll get an error.
+
+long bigLongLiteralValue = 2_147_483_647;  (that is the max integer number)
+
+bigLongLiteralValue = 2_147_483_647_243;  (Integer number too large)
+
+- Java is telling us it´s still treating that number as an integer.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+When is L required 
+
+- A numeric literal that  exceeds Integer.MAX_VALUE must use the 'L' suffix.
+
+- We cannot create a numeric literal in Java, that exceeds Integer.MAX_VALUE, without using the 'L' suffix.
+Or we will always get the error 'Integer number is too large'
+
+---------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
 
 
 
