@@ -613,6 +613,59 @@ error: incompatible types possible lossy conversion from double to float
 So here. even though one of our literals is a float (3f) the other is a double(5.0) and the result is a double and you cannot
 assign a double to a float variable
 
+- So you might be thinking that given the fact that double takes up double the amount of space compared to float, that perhaps
+you should be using the float data type. However, the double primitive type, in this case, is recommended.
+----------------------------------------------------------------------------------------------------------------
+Why should we choose double?
+
+1) It´s actually faster to process on many modern computers. That´s because computers have, at chip level,
+the functionality to actually deal with these double numbers faster than the equivalent float.
+
+2) The Java libraries that we´ll get later i  the course, particularly math functions, are often written to process doubles
+and not floats, and to return results as a double.
+
+3) Java selected the double because it´s more precise, and it can handle a larger range of numbers.
+------------------------------------------------------------------------------------------------
+
+Floating point number precision tips.
+
+In general, float and double are great for general floating point operations.
+
+But neither should be used when precise calculations are required - this is due to a limitation with how floating point
+numbers are stores, and not a Java problem as such
+
+Java  has a class called BigDecimal that overcomes this.
+
+===========================================================================================================
+
+The char and the boolean primitive data types
+
+char myChar = 'D'
+
+- that could be any single character
+
+- It is important to understand that the char is different from a string.
+
+
+If you recall, we´ve used literal strings before, and that´s where we´ve typed some text in double quotes.
+System.out.print("Hello World");
+
+Differences between the char and the String:
+
+char:
+
+- Holds one, and only one character
+- Literal enclosed in Single quotes
+
+
+String:
+
+- Can hold multiple characters
+- Literal enclosed in Double Quotes
+
+
+
+
 
 
 
