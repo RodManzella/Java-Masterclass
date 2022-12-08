@@ -72,3 +72,40 @@ Double
 Boolean
 
 -----------------------------------------------------------------------------------------------------------
+
+What happens if we try to add 1 to the max int value
+
+System.out.print("Busted Max Value = " +(myMaxIntValue + 1));
+Output: Busted Max Value = -2147483648
+
+-We have assigned the maximum value plus one to it, so how is it possible the outcome is negative
+
+- This is called an overflow (we tried to put a larger number than the allowed into the space allocated by the 
+computer for an integer). Now it didn´t fit but the computer tried to fit it anyway (instead of throwing and error)
+and by doing that it overflowed.
+
+
+What happens if we try to subtract 1 of the min int value
+
+System.out.print("Busted Min Value = " +(myMinIntValue - 1));
+Output: Busted Min Value = 2147483647  (Underflow)
+
+
+Overflow and Underflow in Java
+
+- If you try to put a largen than the maximum value into an int, you will create something called and overflow
+situation.
+
+-And similarly, if you try to put a value smaller than the minimum value into an int, you cause an Underflow
+to occur
+
+- The maximum value, when it oveflows, wraps around to the minimum value, and just continues processing without an
+error
+
+- The minimum value, when it underflows, wraps around to the maximum value, and continues processing
+
+-This is not usually behavior that you want, and as a developer, you need to be aware that this can happen, and choose the appropriate data
+type.
+
+
+
