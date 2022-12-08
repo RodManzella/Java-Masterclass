@@ -1,0 +1,74 @@
+In java, primitive data types are the most basic data types;
+
+The eight primititive data types in java are the following:
+
+-Whole number:
+byte
+short
+int 
+long
+
+-Real number(floating point or decimal):
+float
+double
+
+-single character:
+char
+
+-boolean value:
+boolean
+
+Remember that primitive types are simply placeholders in memory for a value
+
+-----------------------------------------------------------------------------
+-Each data type has a range:
+
+int myMinIntValue = Integer.MIN_VALUE;  //assigning the minimum value possible to an int (-2147483648)
+int myMaxIntValue = Integer.MAX_VALUE; //assigning the maximum value possible to an int (2147483647)
+
+------------------------------------------------------------------------------------------
+Classes
+
+- A class is a building block for object-oriented programming, and it allows us to build custom data-types
+
+----------------------------------------------------------------------------------------------
+Wrapper class
+
+- Java uses the concept of a wrapper class, for all it´s eight primitive data types.
+
+- A wrapper class provides simple operations, as well as some basic information about 
+the primitive data-type, which cannot be stored on the primitive itself.
+
+- We saw that MIN_VALUE, and MAX_Value, are elements of this basic information, for the int data type
+
+Primitive:
+
+-Whole number:
+byte                                                      
+short
+int 
+long
+
+-Real number(floating point or decimal):
+float
+double
+
+-single character:
+char
+
+-boolean value:
+boolean
+
+
+-Wrapper Class:
+
+byte
+Short
+Character
+Integer
+Long
+Float
+Double
+Boolean
+
+-----------------------------------------------------------------------------------------------------------
