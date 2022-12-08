@@ -665,6 +665,22 @@ String:
 
 
 
+- The char occupies two bytes of memory, or 16 bits, and thus has a width of 16
+
+- The reason it´s not just a single byte, is that a char is stores as a 2 byte number, similar to the short
+
+- This number gets mapped to a single character by Java
+
+- So, when you print a char you will see the mapped character and not the representative number 
+
+- In some instances, characters aren´t represented of the keyboard, or you may have a reason to use special characters
+in other languages. To do this, java suports a unicode value for characters, which you can use to seta  char value.
+
+Unicode:
+
+Unicode is an internacional encoding standard for use with different languages and scripts by which each letter, digit,
+or symbol is assigned a unique numeric value that applies across different platforms and programs.
+
 
 
 
