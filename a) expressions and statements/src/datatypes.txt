@@ -447,6 +447,10 @@ The point of this, after solving the challenge, was to suggest that integer is t
 generally. But even if you´re using type long, you saw that Java handles a lot of the complexity for you, and you don´t need
 to do this casting with a long
 
+==============================================================================================================================
+
+Floating-point Numbers
+
 
 
 
