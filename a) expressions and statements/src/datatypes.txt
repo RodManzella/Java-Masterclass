@@ -685,7 +685,32 @@ or symbol is assigned a unique numeric value that applies across different platf
 any one of the 65.535 different types of characters
 
 
-How do we use unicode in Java char
+How do we use unicode in Java char?
+
+char myUnicode = '\u0044';   (this code represents the letter D)
+char myUnicode = 68 (this integer represents the letter D)
+---------------------------------------------------------------------------------------------------------------------------------
+ Boolean primitive type
+
+ A boolean value allows for two oposite choices, true or false, yer or no, 1 or 0.
+
+ In java terms, we´ve got a boolean primitive type, and it can be set to two values only, either true or false.
+
+ The wrapper for boolean is Boolean.
+
+ boolean isCustomerOverTwentyOne = true;
+
+- Here are some example boolean variable names, such as isMarried and hasChildren, that clearly define what condition is being tested
+
+isEligigleForDiscount
+isMarried
+hasChildren .....
+==========================================================================================================================
+Primitive types recap and the String data type
+
+
+
+
 
 
 
