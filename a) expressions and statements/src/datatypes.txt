@@ -242,6 +242,219 @@ data type(whose max value is 32.767)
 
 ==============================================================================================================================
 
+- In the last video, we were introduced to three new data types - the byte, the short, and the long.
+
+- We´ll be using these additional types in some basic arithmetic
+
+- We´ve already done some math using integers, but now we´ll be using these other data types.
+
+- We´ll finish with a discussion about casting which is a way to get Java to treate a variable of one type
+like a different data type.
+
+- We´ll talk about when and why casting is sometimes necessary in Java Code.
+
+
+short myMinShortValue = Short.MIN_VALUE; int myMinIntValue = Integer.MIN_VALUE;
+
+byte minByteValue = Byte.MIN_VALUE, myMaxByteValue =  Byte.MAX_VALUE;
+
+
+-Rules for declaring multiple variables in one statement
+
+- You cannot declare variables with different data types in a single statement.
+
+- If you declare multiple variables of the same data type in a single statement, you must specify the
+data type only once before any variable names
+
+
+Let´s break the rules and see what happens. First we will try to declare two data types in the same statement:
+
+short firstShort = 1, int firstInteger = 2; (error)
+
+to solve, simply separate in two statements in the same line by using a semicolon
+short firstShort = 1; int firstInteger = 2; 
+
+
+Let´s break the second rule by declaring the type more than once:
+
+byte firstByte = 1, byte secondByte = 2; (error)
+
+-The problem here is the second byte data type declaration
+
+-two ways to solve:
+
+1) byte firstByte = 1; byte secondByte = 2; (separate into two statements)
+
+2) byte firstByte = 1, secondByte = 2; (declare the type once)
+
+
+- Remember that, putting more than one statement on a single line is perfectly legal in Java. A statement
+needs to end in a semi colon, and multiple statements  cannot be separated by commas.
+
+int myTotal =  (myMinIntValue / 2);
+
+- That is just a simple bit of math that takes the value in the variable myMinIntValue and divides by 2.
+
+- The new variable myTotal of type int gets the result of the division without any issues
+
+
+
+Let´s try the exact same thing, but this time, with the byte data type, creating a new variable of type byte,
+called myNewByteValue
+
+
+byte myNewByteValue = (myMinByteValue / 2);
+error:  incompatible types: possible lossy convertion from int to byte
+
+- Why have we got an error? We know that the value of the result of that division operation should be in
+the for a byte.
+
+-The java compiler does not attempt to evaluate the value, in a variable, when it´s used in a calculation, so it
+doesn´tknow if the value fits, and throws an error.
+byte myNewByteValue = (myMinByteValue / 2);
+
+- If your calculation uses literal values, java can figure out the end result at compile time, and whether it fits
+into the variable, and won´t throw an error if it does.
+byte myNewByteValue = (-128 / 2);
+
+- In both examples an int is being returned from the calculation, but in the second example, Java knows the returned
+value can fit into a byte.
+
+
+We know that is we simply assign a literal value to a byte variable, and the literal value fits, there´s no problem.
+But here (byte myNewByteValue = (myMinByteValue / 2);) we got an expression that uses a variable that´s been divided by
+two. That is the difference compared to what we´ve done previously, when we used a literal value. Java can make assumptions
+about literal values, that it can´t make about expressions with variables. THIS PROBLEM COMES ABOUT because the default whole
+number used by java is an int, and that is why we got an error here.
+
+
+
+byte myNewByteValue = (myMinByteValue / 2);
+error:  incompatible types: possible lossy convertion from int to byte
+
+- So basically what´s in the parentheses, is treated as an int by the computer, and that´s why we´re getting this error.
+
+- But we definitely know the expression will result in a number that fits. So how do we let Java Know?
+
+- We will do that with a concept called casting.
+
+- Casting means to treat or convert a number from one type to another. We put the type we want the number to be, in parentheses
+like this:
+
+(byte) (myMinByteValue / 2);
+
+other languages have casting too, this is a common practice and not just a java thing
+
+byte myNewByteValue = (byte) (myMinByteValue / 2);
+
+
+- Because we´ve used this cast, we´ve told Java, to treat this value, following the parentheses (byte) as a byte
+and the error disappears.
+
+- We´re being really specific in telling Java that this is a byte, so treat this as a byte instead of the default,
+which was an integer. And we can do exactly the same thing for a short.
+
+short myNewShortValue = (myMinShortValue / 2);
+error: incompatible types: possible lossy conversion from int to short
+
+-It´s requiring a short, and found an int data type again
+
+short myNewShortValue = (short)(myMinShortValue / 2);
+---------------------------------------------------------------------------------------------------------------------
+What does it mean when Java defaults the data type of whole numbers to an int?
+
+-So, what effect does int, being the default value, have on our code?
+
+-Looking at the scenarios we just looked in summary, we know to following:
+
+This statement works because the result is an int, and assigning it to an int variable is fine.
+int myTotal = (myMinIntValue / 2);
+
+
+This statement doesn´t work, because the expression (myMinShortValue / 2) is an Int, and an int can´t be assigned to a short,
+because the compiler won´t guess the result.
+short myNewShortValue = (myMinShortValue / 2);
+
+
+This statement works because the result of (-128 / 2) is an int, but when calculations use only literal values, the compiler
+can determine the result immediattely, and knows the value fits into a short.
+short myNewShortValue = (-128 / 2);
+
+
+and finally, this code works because we tell the compiler we know what we´re doing by using this cast, and the compiler
+doesn´t give you an error.
+short myNewShortValue = (short)(myMinShortValue / 2);
+
+
+Generally Speaking, an integer is the wole number you are most likely to use in many cases, and you can probably guess that 
+now, because java uses the int by default. That´s more or less telling us that´s what it´s expecting to use most of the time.
+Because an integer is assumed automatically by Java, you saw that in these cases, we got an error when we were assigning calculations
+to smaller data types. 
+
+=======================================================================================================================================
+Primitive types challenge:
+
+Your challenge is to create four new variables:
+
+- A byte variable, set it to any valid byte number, it doesn´t matter.
+
+- A short  variable, set it to any short number.
+
+- An int variable, set it to any valid integer number
+
+- Lastly, cvreate a variable of type long. Make it equal to 50.000 plus 10 times the sum of the other variables.
+
+byte byteValue = 10;
+short shortValue = 20;
+int intValue = 50;
+
+long longTotal = 50000L + 10L * (byteValue + shortValue + intValue);        longTotal --> 50800
+----------------------------------------------------------------------------------------------------------------
+Another way of doing it
+
+byte byteValue = 10;
+short shortValue = 20;
+int intValue = 50;
+
+int sumOfThree = byteValue + shortValue + intValue;    (works because variables are treated as int)      sumOfThree --> 80
+
+longTotal = 50000L + (10 * sumOfThree);         longTotal --> 50800
+---------------------------------------------------------------------------------------------------------------------
+
+Using parentheses
+
+-Parentheses are another way to make your code more readable.
+longTotal = 50000l + (10 * sumOfThree);
+
+-They also make it clear which calculation should be done first.
+
+- I also did not include the L suffix in the numeric literal 10 in this example. Remember that 'L' is optional if the value
+is less than the integer maximum value. You can include it as a way of creating self documenting code for future readers but
+it works just the same without it in this instance.
+
+- Also notice how we didn´t need to do any casting. This is because the right side produced a long, because we used a long literal
+in the first part of the equation(50000L), so in this instance, the result is a long.
+
+but what if we wanted to do something similar to a short?
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
