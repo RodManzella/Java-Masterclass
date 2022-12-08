@@ -451,6 +451,28 @@ to do this casting with a long
 
 Floating-point Numbers
 
+- Unlike whole numbers, floating-point numbers have fractional parts that we express with a decimal point.
+
+Whole number examples:
+3
+100000
+-2147483649L
+
+Floating point examples:
+3.14
+10.0
+-0.666666666666666666667
+
+- Floating point numbers are also known as real numbers
+-------------------------------------------------------------------------------------------------------------------
+
+We use a floating number when we need more precision in calculations.
+
+- There are two primitive types in java for expressing floating point numbers, the float and the double.
+
+- The double is Java´s default type for any decimal or real number
+
+
 
 
 
