@@ -472,6 +472,160 @@ We use a floating number when we need more precision in calculations.
 
 - The double is Java´s default type for any decimal or real number
 
+- A double can work with a much bigger range of numbers, and it´s a lot more precise than the float.
+
+- but of course, on the other hand, it needs twice the amount of memory, 64 bits or eight bytes, to store that number compared
+to the float, which require 32 bits or 4 bytes, to store its number
+
+----------------------------------------------------------------------------------------------------------------
+
+- Earlier we learnt that the letter 'L' is used in a whola number literal, if the value is greater than the int´s max value, or smaller
+than the int´s min value, to specify a long value. The suffix is optional otherwise, but you might want to use it to self-document code.
+
+important: the double data type is java´s default type for real numbers.
+
+- for example: any number with a decimal is a double.
+
+- So 10.5 is a double by default in Java.
+
+- The double data type can be specified as a numeric literal with a suffix of either lowercase 'd' or uppercase 'D', but because doubles
+are the default in Java, the suffix is optional to use.
+
+- The float data type can be specified as a numeric literal with a suffix of lowercase 'f', or uppercase 'F'. This suffix is required
+if you are assignining a real number to a variable that was declared with a float type
+
+
+
+int myIntValue = 5;
+float myFloatValuw = 5;
+double myDoubleValue = 5;
+
+- Notice that we haven´t put anything on the end of any of the numbers 5´s. What i mean is, we haven´t included a suffix
+in the numeric literal that we assigned to any of these variables. We just used the simple literal 5. You can see that we
+did not put and 'F', 'D' or any suffix there and that´s been executed just fine.
+
+- What this means is, we can assign an integer literal to both a float and a double variable. You can put a F or D to confirm
+the data type. It´s a good practice to do that i general if you´re typing literal numbers to make it abundantly clear what you 
+intend them to be.
+
+float myFloatValue = 5f;
+double myDoubleValue = 5d;
+
+- You might have noticed that we got the same output whether we used suffixes or not, when we we assigned a whole number
+literal to these variables. That works fine for a whole number, but you´ll find that if we add a decimal and remove the 'f'
+we will actually get an error.
+
+float myOtherFloatValue = 5.25;
+error: incompatible types: possible lossy conversion from double to float
+
+- The reason we get this error is, as previously pointed out, the double is the default floating point number in Java, so here,
+we´ve got a similar problem. You can see that java doesn´t like trying to put a double into a float variable type. In this case,
+the literal value that we´ve typed in, 5.25, is being interpreted as a double.
+
+
+Challenge: Thinking back to our discussion os casting how you think you´d do the same for the float to remove this error?
+
+float myOtherFloatValue = (float) 5.25;           
+
+-We are telling Java yes, this is a literal double that has been typed here, but i wan´t you to treat it as a float
+
+- this is not recommended to do for a couple reasons. Firstly, floats aren´t usually  recommended to be used much these days.
+Double is the preferred floating point data type to use. But secondly, it´s a lot clearer to just add the letter 'F', right at
+the end
+
+float myOtherFloatValue = 5.25f; 
+
+
+
+- Not everyone realizes that Java´s default type for a decimal literal is a double, which is larger and more precise than a float.
+
+- Java likes to put a similar code in its code segments on exam questions, to what we saw earlier, omitting that 'f' suffix. without
+your compiler od IDE, this statement can look fairly innocuous.
+
+    float myotherFloatValue = 5.25;
+
+- The number 5.25 is a double, so assigning it to a float will raise an error.
+
+- this is a gift question to an exam taker, if you can easily spot this compiler error.
+
+- Just remember, in Java, a decimal number literal is a double. a float is less precise than a double, so you cannot just
+assign a less precise value to a more precise variable type without using a suffix or explicit cast.
+
+========================================================================================================================================
+ We´ll take a look at the differences in precision when using arithmetic.
+
+int myIntValue = 5; myIntValue --> 5
+
+float myFloatValue = 5f;  myFloatValue -- > 5.0
+
+double myDoubleValue = 5d;  myDoubleValue -- > 5.0
+
+
+myIntValue = 5 / 2;
+myIntValue -- > 2
+
+- Java uses a rather complex process, when determining what type of data to output from calculations, based on the types of numbers
+used in the equation. Because both 5 and 2 are integers the result is an integer value and the value is two
+
+
+- Let´s try something similar with a float variable: 
+
+myFloatValue = 5f / 2f;
+myFloatValue -- > 2.5
+
+As we expected, because we used the division operator on two floats(the suffix made these numeric literals floats here). In this
+case, Java returns a float, so we do not need to cast the result.
+
+- And let´s use a similar equation, with double literals, and assigning to our variable
+
+myDoubleValue = 5d / 2d;
+myDoubleValue -- > 2.5
+
+
+- We´ll change the divisor, which is the number we are dividing by, from 2 to 3.
+
+myIntValue = 5 / 3;
+myIntValue = 1;
+
+myFloatValue = 5f / 3f;
+myFloatValue -- > 1.6666666 (7 decimal places)
+
+myDoubleValue = 5 / 3;
+myDoubleValue -- > 1.6666666666666667 (16 decimal places)
+
+
+
+myDoubleValue = 5.00 / 3.00
+myDoubleValue -- > 1.6666666666666667 (16 decimal places)
+We don´t need the 'd' suffix, remembering that Java will automatically look at a decimal number and assume it´s a double
+
+
+- let´s take a moment here to change one of the operands to a literal int, leaving the other operand as a double decimal number
+myDoubleValue = 5.00 / 3.00
+myDoubleValue -- > myDoubleValue -- > 1.6666666666666667
+
+As long as one of the operands is a double, your result will be a double. This won´t work for your float variable
+
+
+myFloatValue = 5.00 / 3f;
+error: incompatible types possible lossy conversion from double to float
+
+So here. even though one of our literals is a float (3f) the other is a double(5.0) and the result is a double and you cannot
+assign a double to a float variable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
