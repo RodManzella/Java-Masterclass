@@ -803,6 +803,49 @@ double doubleNumber = 120.47; lastString = lastString + doubleNumber
 lastString -- > "1050120.47"
 
 
+The behavior was exactly the same as when we used an integer. Java has treated the double value as text, and appended that as text to
+our String variable. What we are doing here is only a very elementary way of dealing with Strings and adding to Strings. In later
+lessons, we´re going to look at more advanced features of a String.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Strings are immutable
+
+- Immutable means that you can´t change a String after it´s created.
+
+- So in the case of the code we´ve writen, the value 120.47 is technically not appended to the current contents of lastString.
+lastString = lastString + myInt;
+
+- Instead, a new String is created automatically by Java. The new String consists of the previous value of lastString, plus
+a textual representation of the double 120.47.
+
+- The net result, is that our variable, lastString, has the concatenated value. However Java created a new String in the process,
+and the old one will get discarded from memory automatically.
+
+-The code we wrote there was quite inefficient. Because a new String gets created for every operation, appending values like this is
+inefficient and generally not recommended. Java provides another class that is more efficient if you are doing a lot of aappending
+multiple strings or values.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+String vs StringBuilder
+
+- The String class is imummtable, but can be used much like a primitive data type.
+
+- The StringBuilder class is mutable, but does not share the String´s special features, such as being able to assign a String literal
+or use the + operator on it.
+
+Both are classes, but the String class is in a special category in the Java language.
+
+Java provides a class in its library to address the inefficiency of the immutable String, when you are creating a large amount of
+text from many smaller parts. This class is called the StringBuilder class, and unlike a String, the sequence of characters in A
+StringBuilder class can be changed.
+
+- Using operators like plus to concatenate String values, is code you´ll probably see. It´s useful to know how to do things this way,
+but it´s also important to understand there´s a better way to do it.
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
