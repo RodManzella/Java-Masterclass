@@ -722,6 +722,68 @@ which turns to be the MAX_VALUE of an int. That mamximum size is around 2.14 bil
 
 
 String myString = "This is a string";
+System.out.print("myString is equal to " + myString);
+myString is equal to This is a string
+
+
+myString = myString + ", and this is more.";
+System.out.print("myString is equal to " + myString);
+myString is equal to This is a string, and this is more.
+
+
+When the + operator follows a String, it is technically called the concatenation operator, because the text that follows it
+is concatenated to the previous text, and returned as a result of that operation
+
+
+you can also use unicode characters with strings
+
+myString = "I wish i had \u00241,000,000,000.00";
+System.out.print(myString);
+I wish i had $1,000,000,000.00
+
+
+
+String numberString = "250.55";
+numberString = numberString + "49.45";
+System.out.print(numberString);
+250.5549.45
+
+- What happened here? Well in fact, technically, the 49.45 was added to 250.55, but it was added as a String. It was concatenated
+in other words. The reason for that, is that we´re not using a numeric type, such as an int or a long, or even a double. We´re using
+a text data type, a String in this case and a String treats the text or digits in the double quotes as text, and only text. In general
+when you type something inside dougle quotes, Java by default, interprets that to be a String literal.
+
+- There is no numerical calculations done. We´ll need to convert that to another type, or save it in another type, in order to be able
+to perform mathematical calculations to numbers in a String. In fact let´s look at this in a slightly diferent way. Let´s declare a new
+int, but we will add a little twist to it.
+
+int myInt = "10";
+error: incompatible types: java.lang.String cannot be converted to int
+
+- Java interprets that as a String and throws an error, similar to some of the errors we´ve seen in the past, regarding data type
+incompatibility
+
+
+
+let´s declare a couple more variables, one String and one int.
+
+
+String lastString = "10";
+int myInt = 50;
+
+
+lastString = lastString +  myInt;     (we are adding a numeric data type(myInt) to a String(lastString))
+lastString -- > "1050"
+
+Even though we´ve used an integer data type now, in the second part of the expression, we´ve still ended up concatenating
+the integer to the String value "10". Our String variable, lastString is still configured and set up as a String.
+
+
+
+
+
+
+
 
 
 
