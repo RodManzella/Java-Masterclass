@@ -778,6 +778,30 @@ lastString -- > "1050"
 Even though we´ve used an integer data type now, in the second part of the expression, we´ve still ended up concatenating
 the integer to the String value "10". Our String variable, lastString is still configured and set up as a String.
 
+------------------------------------------------------------------------------------------------------------------------------
+
+String concatenation
+
+- In Java, the + symbol is an operator which can mean addition, if used for numbers.
+
+- But it also menas concatenation when applied to the String.
+
+- A String + anything else, gives us a String as a result, concatenating anything after the String as text to the initial String
+
+
+Java is smart enough to know that the integer(myInt) you´ve defined in (lastString = lastString +  myInt) is after a String and
+it actually looks at the contents of myInt, and converts the value(50) to a String, and then this is concatenated to the String
+value 10. Anf that is why we´re seeing 1050, as the value of our lastString. So myInt isn´t treated as a number, and it´s rather
+treated as purely text by the computer, because it knows it´s being added to the String lastString. So the myInt variable itself
+is still an integer variable with an integer value, but because it´s being added to a String, the value is treated as a String.
+
+
+
+-Let´s do something similar with a double:
+
+double doubleNumber = 120.47; lastString = lastString + doubleNumber
+lastString -- > "1050120.47"
+
 
 
 
