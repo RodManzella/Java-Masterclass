@@ -843,6 +843,13 @@ StringBuilder class can be changed.
 - Using operators like plus to concatenate String values, is code you´ll probably see. It´s useful to know how to do things this way,
 but it´s also important to understand there´s a better way to do it.
 --------------------------------------------------------------------------------------------------------------------------------------
+The String
+
+- The String is so intrinsic to the Java language, that it can be used like a 9th primitive type.
+
+- But it´s not a primitive type at all, it´s a class.
+
+===================================================================================================================================
 
 
 
