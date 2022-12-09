@@ -708,7 +708,20 @@ hasChildren .....
 ==========================================================================================================================
 Primitive types recap and the String data type
 
+What is a String?
 
+The String is a data type in Java which is not a primitive. It´s actually a class, but it enjoys a bit of favoritism in Java to
+make it easier to use than a regular class. In other words, it´s treated a little bit differently, and you can use it in ways
+you woudn´t normally, for most other classes.
+
+A String is a class that contains a sequence of characters
+
+- A string can contain a whole set of characters. It´s limited by the amount of memory space, or heap space, in your computer
+which turns to be the MAX_VALUE of an int. That mamximum size is around 2.14 billion.
+
+
+
+String myString = "This is a string";
 
 
 
