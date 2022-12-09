@@ -912,7 +912,23 @@ System.out.print("" + firstChar + secondChar);
 AB
 
 Any plus after a String (in this case empty string) is going to be a concatenation operator.
+---------------------------------------------------------------------------------------------------------------------------
 
+The abbreviating operators.
+
+result ++
+
+result --
+
+result += 5;
+
+result -= 5;
+
+result *= 5;
+
+result /= 5;
+
+THE END.
 
 
 
