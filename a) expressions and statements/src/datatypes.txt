@@ -850,6 +850,72 @@ The String
 - But it´s not a primitive type at all, it´s a class.
 
 ===================================================================================================================================
+Operators, operands and expressions
+
+So what are operators?
+
+- Operators in Java are special symbols that perform specific operations on one, two, or three operands, and then return a result.
+
+- In the example below, which we saw in a previous video, we used the plus or addition operator as well as the multiplication operator.
+
+long longTotal = 50000L + 10L * (byteValue + shortValue + intValue);
+
+
+What are operands?
+
+- An operand is a term used to describe any object that is manipulated by an operator.
+
+So if we consider this statement:
+
+        int myVar = 15 + 12;
+- The plus here is the operator, and 15 and 12 are operands. Variables used instead of literals can also be operands.
+
+long longTotal = 50000L + 10L * (byteValue + shortValue + intValue);
+
+In the line above, the variables inside parenthesis are operands, as are the numeric literals.
+
+
+What are expressions?
+
+- An expression is formed by combining variables, literals, method return values and operators.
+
+- They are a way of forming and combining those values to produce a result.
+
+In the line below, 15 + 12 is the expression, which returns the value of 27.
+
+            int myVar = 15 + 12;
+
+In the statement bellow, byteValue + shortValue + intValue is the expression.
+
+int sumOfThree =  byteValue + shortValue + intValue;
+-------------------------------------------------------------------------------------------------------------------------------
+
+char firstChar = 'A'; char secondChar = 'B';
+
+System.out.print(firstChar + secondChar);
+131
+
+The + operator on char
+
+You might remember that we said chars are stored as 2 byte numbers in memory.
+
+- When you use the plus operator with chars, it is these numbers in memory that get added together.
+
+- The character values don´t get concatenated.
+
+- The decimal values for 'A' and 'B' are 65 and 66 respectively
+
+
+if you really want to print A concatenated with B, you can concatenate these variables to a String. We´ll do that next
+
+System.out.print("" + firstChar + secondChar);
+AB
+
+Any plus after a String (in this case empty string) is going to be a concatenation operator.
+
+
+
+
 
 
 
