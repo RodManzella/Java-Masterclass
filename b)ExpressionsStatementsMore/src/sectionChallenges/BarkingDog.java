@@ -6,16 +6,26 @@ public class BarkingDog {
     }
 
     public static boolean shouldWakeUp(boolean barking, int hourOfDay){
-        boolean isAwake;
+        boolean isAwake = false;
 
-        if(barking){
-            if(hourOfDay < 0 || hourOfDay > 23){
-                isAwake = false;
-            }
-            else if(hourOfDay < 8 || hourOfDay > 22){  //Se chegou nessa condicional, não é menor que 0 e nem maior que 23
+        if(hourOfDay < 0 || hourOfDay > 23){
+            isAwake = false;
+        }
+
+        else if(barking){ 
+            if(hourOfDay < 8 || hourOfDay > 22){  //Se chegou nessa condicional, não é menor que 0 e nem maior que 23
                 isAwake = true;
             }
+            else{
+                isAwake = false;
+            }
         }
+        else{
+            isAwake = false;
+        }
+        return isAwake;
         
+        
+         
     }
 }
