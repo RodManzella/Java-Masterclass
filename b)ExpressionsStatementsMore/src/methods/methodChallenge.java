@@ -20,9 +20,25 @@ public class methodChallenge {
      // Finally, we´ll call both methods and display the results for the following scores: 1500, 1000, 500, 100 and 25
 
      public static void main(String[] args) {
-        int highScorePosition = calculateHighScorePosition(1500);
-        displayHighScorePosition("Tim", highScorePosition);
+        int highScorePositionT = calculateHighScorePosition(1500);
+        displayHighScorePosition("Tim", highScorePositionT);
+
+        int highScorePositionB = calculateHighScorePosition(1000);
+        displayHighScorePosition("Bob", highScorePositionB);
+
+        int highScorePositionP = calculateHighScorePosition(500);
+        displayHighScorePosition("Percy", highScorePositionP);
+
+        int highScorePositionG = calculateHighScorePosition(100);
+        displayHighScorePosition("Gilbert", highScorePositionG);
+
+        int highScorePositionJ = calculateHighScorePosition(25);
+        displayHighScorePosition("James", highScorePositionJ);
+
+
      }
+
+
 
      public static int calculateHighScorePosition(int score){
         if(score >= 1000){
