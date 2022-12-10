@@ -39,4 +39,18 @@ public class MethodOverloadingChallenge {
         return result;
         // The same as the method above, but more organized.
     }
+
+    /*
+     * For this challenge, we didn´t include validation, but we´ll be doing that in the next challenge, which is similar to this one.
+     * In the next challenge you´ll be converting seconds and minutes to other time units.
+     * So you´ll often find that when you´re overloading methods, you´ll be calling one overloaded method from another, as we did here.
+     * In this case, the conversion formula isn´t going to change in the future, because centimeters can always be retrieved by multiplying
+     * inches by 2.54.
+     * So, we didn´t really have to call the overloaded method. But if your formula, or calculation may change or get updated, you´d want
+     * to centralize that equation into one method. Then all your overloaded methods can call the one that has the formula code in it,
+     * just as we´ve done here.
+     * This will keep your calculation code in a single place, and prevent incosistent results if the code is changed into one overloaded
+     * method and not another.
+     * 
+     */
 }
