@@ -36,8 +36,7 @@ public class SecondsAndMinutesChallenge {
 
     public static String getDurationString(int minutes, int seconds){
         
-       int minuteToSecond = (60 * minutes);
-       int totalSeconds = minuteToSecond + seconds;
+       int totalSeconds = (60 * minutes) + seconds;
 
        int hour = totalSeconds / 3600;  //hour
        int remainderSeconds = totalSeconds % 3600;
