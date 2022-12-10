@@ -59,7 +59,7 @@ public class methodChallenge {
     //Better way (using only one return statement)
 
     public static int calculateHighScorePosition(int score){
-        int position = 4;
+        int position = 4; 
 
         if(score >= 1000){
             position = 1;
