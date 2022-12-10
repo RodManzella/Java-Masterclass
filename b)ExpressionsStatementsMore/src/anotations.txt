@@ -1,0 +1,11 @@
+Keywords and expresisons
+
+Java has actually got 51 reserved words, that are used for keywords in your applications.
+
+A keyword is one of the 51 reserved words, that have a predefined meaning in the language.
+
+Java actually uses the terminology character sequences to describe these now.
+
+In addition to reserved keywords you´ll see that as of JDK 17, Java has 16 contextual keywords, which are only keywords
+in special situations.
+
