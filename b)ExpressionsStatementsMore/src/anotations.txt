@@ -171,8 +171,20 @@ method declaration exactly.
 
 - Revisiting the main Methods
 
-- The main method is special in Java, because Java´s virtual machine (JVM)
+The main method is special in Java, because Java´s virtual machine (JVM) looks for the method, with this particular signature, and
+uses it as the entry point for execution of code.
 
+    public static void main(String [] args){
+        // code in here
+    }
+
+This method has two modifiers, public and static. Remember that they are required for this special method to be recognized by the JVM
+
+This method had void as return type, so now we know this method doesn´treturn any data. The name of this method is main, all in lower case.
+You can actually name a method main with a capital M or all capital letters, the Java compiler will let you do that. But it won´t have the
+special signature needed, and therefore won´t be the expected entry point for executable code.
+
+We can see there´s one parameter set up for this method (String [] args) 
 
 
 
