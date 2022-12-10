@@ -3,8 +3,8 @@ package sectionChallenges;
 public class SpeedConverter {
     
     public static void main(String[] args) {
-        long test = toMilesPerHour(-10);
-        System.out.println(test);
+        double speedKm = 10;
+        printConversion(speedKm);
     }
 
 
@@ -25,10 +25,11 @@ public class SpeedConverter {
         if(kilometersPerHour < 0){
             System.out.println("Invalid value");
         }
+        else{
+            long milesPerHour = toMilesPerHour(kilometersPerHour);
+            System.out.println(kilometersPerHour +" km/h = "+milesPerHour+ "mi/h");
+        }
 
-        long milesPerHour = toMilesPerHour(kilometersPerHour);
-
-        System.out.println(kilometersPerHour +" km/h = "+milesPerHour+ "mi/h");
-
+    
     }
 }
