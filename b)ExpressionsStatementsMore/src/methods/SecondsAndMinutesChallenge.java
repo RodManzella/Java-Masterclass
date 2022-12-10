@@ -29,6 +29,7 @@ public class SecondsAndMinutesChallenge {
 
     public static String getDurationString(int seconds){
         // de alguma forma, chamar o segundo método aqui.
+        // acho que vai pegar o resto das horas(minutos e seg e converter em segundos)
     }
 
 }
