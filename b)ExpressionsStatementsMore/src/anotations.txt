@@ -9,3 +9,83 @@ Java actually uses the terminology character sequences to describe these now.
 In addition to reserved keywords you´ll see that as of JDK 17, Java has 16 contextual keywords, which are only keywords
 in special situations.
 
+--------------------------------------------------------------------------------------------------------------------------------------------
+Methods recap
+
+
+-Java´s documentation states that: 
+
+A method calls executable code that can be invoked, passing a fixed number of values as arguments.
+
+Like some of the abbreviated operators we learned about, a method can be a statement or an expression in some instances.
+
+Any method can be executed as a statement.
+
+A method that returns a value can be used as an expression, or as part of any expression.
+
+
+What are functions and procedures?
+
+- Some programming languages will call a method that returns a value, a function, and a method that doesn´t return a value, a procedure.
+
+ - You´ll often hear function and method used interchangeably in Java.
+
+ The term procedure is somewhat less common, when applied to Java methods, but you may still hear a method with a void return type,
+ called procedure.
+
+- Declaring the method
+
+So there are quite a few declarations that need to occur as we create a method.
+
+This consists of:
+
+Declaring Modifiers. These are keywords in Java with special meanings, we´ve seen public and static examples, but there are others.
+
+
+- Declaring the return type.
+
+void is a Java keyword meaning no data is returned from a method.
+
+Alternatively, the return type can be any primitive data type or class.
+
+If a return type is defined, the code block must use at least one return statement, returning a value, of the declared type operators
+comparable type.
+
+
+
+- Declaring the method
+
+Declaring the method name. lower camel case is recommended for method names.
+
+Declaring the method paramethers in parentheses. A method is not required to have parameters, so a set of empty parenthesis would
+be declared in that case.
+
+Declaring the method with opening and closing curly braces. this is also called the method body.
+
+
+
+- Declaring the parameters
+
+Parameters are declared as a list of comma-separated specifiers, each of which has a parameter type and a parameter name (or identifier).
+
+Parameter order is important when calling the method.
+
+The calling code must pass arguments to the method, with the same or comparable type, and in the same order, as the declaration.
+
+The calling code must pass the same number of arguments, as the number of parameters declared.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
