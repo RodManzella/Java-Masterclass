@@ -6,14 +6,11 @@ public class EqualSumChecker {
     }
 
     public static boolean hasEqualSum(int firstValue, int secondValue, int sum){
-        boolean returnedValue;
+        boolean returnedValue = false;
         int firstAndSecondSum = firstValue + secondValue;
 
         if(firstAndSecondSum == sum){
             returnedValue = true;
-        }
-        else{
-            returnedValue = false;
         }
         return returnedValue;
     }
