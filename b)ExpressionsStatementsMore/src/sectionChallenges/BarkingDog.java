@@ -23,9 +23,6 @@ public class BarkingDog {
         else{
             isAwake = false;
         }
-        return isAwake;
-        
-        
-         
+        return isAwake;   
     }
 }
