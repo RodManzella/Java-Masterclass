@@ -15,7 +15,5 @@ public class PositiveNegativeZero {
         else{
             System.out.println("zero");
         }
-
-        
     }
 }
