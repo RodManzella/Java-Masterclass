@@ -14,6 +14,7 @@ public class MethodOverloading {
     public static int calculateScore(int score){
         
         return calculateScore("Anonymous", score);
+        //Se uma pessoa não quiser passar o nome do jogador, esta função chama a outra passando um nome padrão como String.
     }
 
     public static int calculateScore(){
