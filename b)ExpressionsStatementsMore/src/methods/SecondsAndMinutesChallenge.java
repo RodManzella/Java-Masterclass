@@ -14,7 +14,8 @@ public class SecondsAndMinutesChallenge {
     //     XXh YYm ZZs´
     // Where XX represents the number of hours, YY the number of minutes, and ZZ the number of seconds.
     // the first method should in turn call the second method to return it´s results.
-    // remember that one minute is 60 secons, and one hours equal 60 minutes, or 3600 seconds.
+
+    // remember that one minute is 60 seconds, and one hours equal 60 minutes, or 3600 seconds.
 
     // Add validation to the methods as a bonus:
 
@@ -24,6 +25,10 @@ public class SecondsAndMinutesChallenge {
 
     public static void main(String[] args) {
         
+    }
+
+    public static String getDurationString(int seconds){
+        // de alguma forma, chamar o segundo método aqui.
     }
 
 }
