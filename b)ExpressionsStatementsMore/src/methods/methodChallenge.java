@@ -40,21 +40,40 @@ public class methodChallenge {
 
 
 
-     public static int calculateHighScorePosition(int score){
+    //  public static int calculateHighScorePosition(int score){
+    //     if(score >= 1000){
+    //         return 1;
+    //         here, whe are testing if the playerScore is >= 1000, and if it is, we exit with a value of 1
+    //         This means that for all other test cases that are left, this playerScore will be less than 1000
+    //     }
+    //     else if(score >= 500){  
+    //         return 2;
+    //     }
+    //     else if(score >= 100){  //It´s already been determined by the condition above, that playerScore is less than 500.(if reached this condition)
+    //         return 3;           
+    //     }
+    //     return 4;  // If the three first conditions end up being false, it drops down to here(else is unecessary).
+          
+    //  }
+    
+    //Better way (using only one return statement)
+
+    public static int calculateHighScorePosition(int score){
+        int position = 4;
+
         if(score >= 1000){
-            return 1;
+            position = 1;
         }
-        else if(score >= 500 && score < 1000){
-            return 2;
+        else if(score >= 500){  
+            position =  2;
         }
-        else if(score >= 100 && score < 500){
-            return 3;
+        else if(score >= 100){  //It´s already been determined by the condition above, that playerScore is less than 500.(if reached this condition)
+            position = 3;           
         }
-        else{
-            return 4;
-        }
-         
+        return position;  // Se não cair em nenhuma das condições, como o valor está setado em 4 anteriormente, retorna 4.
+          
      }
+     
 
      public static void displayHighScorePosition(String playerName, int playerPosition){
         System.out.println(playerName +" managed to get position "+ playerPosition+ " on the high score list");
