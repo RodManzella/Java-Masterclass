@@ -2,7 +2,7 @@ package sectionChallenges;
 
 public class PositiveNegativeZero {
     public static void main(String[] args) {
-        
+        checkNumber(1);
     }
 
     public static void checkNumber(int number){
@@ -12,7 +12,10 @@ public class PositiveNegativeZero {
         else if(number < 0){
             System.out.println("negative");
         }
+        else{
+            System.out.println("zero");
+        }
 
-        System.out.println("zero");
+        
     }
 }
