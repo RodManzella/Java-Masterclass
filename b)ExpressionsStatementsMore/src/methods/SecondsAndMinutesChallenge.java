@@ -24,12 +24,30 @@ public class SecondsAndMinutesChallenge {
     // If either value is passed an invalid value, print out some type of meaningful message to the user.
 
     public static void main(String[] args) {
-        
+        System.out.println(getDurationString(345, 7658));
     }
 
-    public static String getDurationString(int seconds){
-        // de alguma forma, chamar o segundo método aqui.
-        // acho que vai pegar o resto das horas(minutos e seg e converter em segundos)
+    // public static String getDurationString(int seconds){
+    //     // de alguma forma, chamar o segundo método aqui.
+    //     // acho que vai pegar o resto das horas(minutos e seg e converter em segundos)
+
+
+    // }
+
+    public static String getDurationString(int minutes, int seconds){
+        
+       int minuteToSecond = (60 * minutes);
+       int totalSeconds = minuteToSecond + seconds;
+
+       int hour = totalSeconds / 3600;  //hour
+       int remainderSeconds = totalSeconds % 3600;
+
+       int minutesFromRemainderSeconds = remainderSeconds / 60;  // minutes
+       int secondsFromTheRemainderOfMinutes = remainderSeconds % 60;  // seconds
+
+       
+       return hour + "h " + minutesFromRemainderSeconds+ "m "+secondsFromTheRemainderOfMinutes+ "s";
+
     }
 
 }
