@@ -249,6 +249,33 @@ This slide demonstrate some valid overloaded methods, for the doSomething method
 
 
 
+- Invalid Overloaded Methods
+
+Parameter names are not important when determining if a method is overloaded.
+
+Nor are return types used when determining if a method is unique.
+
+
+    public static void doSomething(int parameterA){
+        // method body
+    }
+
+    public static void doSomething(int parameterB){
+        // method body
+    }
+
+    public static int doSomething(int parameterA){
+        return 0;
+    }
+
+
+
+
+
+    
+
+
+
 
 
 
