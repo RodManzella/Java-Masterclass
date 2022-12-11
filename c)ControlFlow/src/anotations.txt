@@ -101,3 +101,34 @@ Traditional switch statement  vs   Enhanced Switch Expression
         return "4th";
 }
  return "bad";
+
+
+
+
+
+    return switch (month){
+            case "JANUARY", "FEBRUARY", "MARCH" -> "1st";
+            case "APRIL", "MAY", "JUNE" -> "2nd";
+            case "JULY", "AUGUST", "SEPTEMBER" -> "3rd";
+            case "OCTOBER", "NOVEMBER", "DECEMBER" -> "4th";
+            default -> "bad";
+        };
+
+
+We can see that the multiple case keyword have been removed, for a comma delimited list, and the colon is replaced with an arrow token,
+so this looks a lot like the enhanced switch statement. But look at the right side of the arrow token, it´s just a String literal. This
+isn´t a statement at all. This  code only compiles because we´re using it as an expression, meaning we´re using the result. In this case,
+we´re simply returning the result from the method, but we just as easily have assigned it to a local variable. The other important difference
+is this default label. When the enhanced switch is an expression, meaning it returns a value, then a default label is required under most 
+conditions. We´ll be talking about the exception to this rule later, when we use the switch with the last special type it supports, the enum.
+But in all other cases, default is required when the statement is used as an expression. So let´s test these statements in our code.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+When to use yield in a switch:
+
+Your switch statement is being used as a switch expression returning a value
+
+    This code                is implicitly translated to 
+
+    -> "1st"                    

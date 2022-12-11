@@ -43,8 +43,21 @@ public class Switch {
             case "APRIL", "MAY", "JUNE" -> "2nd";
             case "JULY", "AUGUST", "SEPTEMBER" -> "3rd";
             case "OCTOBER", "NOVEMBER", "DECEMBER" -> "4th";
-            default -> "bad";
+            default -> {
+                String badResponse = month + "is bad";
+                yield badResponse;
+            }
+            // If you´re doing additional code in the case branch, you need to use a code block, and this keyword yield.
+            // Yield is only required under certain conditions.
         };
+
+        // return switch (month){
+        //     case "JANUARY", "FEBRUARY", "MARCH" -> "1st";
+        //     case "APRIL", "MAY", "JUNE" -> "2nd";
+        //     case "JULY", "AUGUST", "SEPTEMBER" -> "3rd";
+        //     case "OCTOBER", "NOVEMBER", "DECEMBER" -> "4th";
+        //     default -> "bad";
+        // };
 
         // switch(month){
         //     case "JANUARY":
