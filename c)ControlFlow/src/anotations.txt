@@ -39,3 +39,41 @@ of the switch statement occurs.
 
 Without a break statement, execution will continue to fall through any case labels declared below the matching one, and
 execute each case´s code.
+
+=======================================================================================================================================
+
+More switch statement
+
+since JDK 9, the switch has been undergoing enhancements, but to keep it backwars compatible, Java has introduced a new syntax
+for the switch as shown below:
+
+Traditional Swicth statement:
+
+switch(switchValue){  //check the variable switchValue
+    case 1:                                              
+        System.out.println("Value was 1");
+        break;  
+    case 2:
+        System.out.println("Values was 2");
+        break;
+    case 3: case 4: case 5:                           
+        System.out.println("Was a 3, a 4 or a 5");
+        System.out.println("Actually, it was a "+switchValue);
+    default:
+        System.out.println("Was not 1, 2, 3, 4, or 5");  
+        }
+
+
+Enhanced switch statement:
+
+switch(switchValue){
+    case 1 -> System.out.println("Value was 1");
+    case 2 -> System.out.println("Value was 2");
+    case 3, 4, 5 ->{
+        System.out.println("Was a 3, a 4 or a 5");
+        System.out.println("Actually, it was a "+switchValue);
+    }
+    default -> System.out.println("Was not 1, 2, 3, 4, or 5");  
+}
+
+
