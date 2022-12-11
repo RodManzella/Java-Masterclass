@@ -1,0 +1,13 @@
+The switch statement
+
+Switch(value){
+    case x:
+        //code for value x
+        break,
+
+    case y:
+        // code for value y
+        break;
+    default:
+        // code for value not equal to x or y
+}
