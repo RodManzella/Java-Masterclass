@@ -77,3 +77,6 @@ switch(switchValue){
 }
 
 
+-----------------------------------------------------------------------------------------------------------
+
+Traditional switch statement  vs   Enhanced Switch Expression
