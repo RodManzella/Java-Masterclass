@@ -27,25 +27,22 @@ public class SecondsAndMinutesChallenge {
         System.out.println(getDurationString(345, 7658));
     }
 
-    // public static String getDurationString(int seconds){
-    //     // de alguma forma, chamar o segundo método aqui.
-    //     // acho que vai pegar o resto das horas(minutos e seg e converter em segundos)
+     public static String getDurationString(int seconds){
+        
+        int minutes = seconds / 60;
+        return getDurationString(minutes, seconds);
 
 
-    // }
+     }
 
     public static String getDurationString(int minutes, int seconds){
-        
-       int totalSeconds = (60 * minutes) + seconds;
+        int hours = minutes / 60;
 
-       int hour = totalSeconds / 3600;  //hour
-       int remainderSeconds = totalSeconds % 3600;
+        int remainingMinutes = minutes % 60;
+        int remainingSeconds = seconds % 60;
 
-       int minutesFromRemainderSeconds = remainderSeconds / 60;  // minutes
-       int secondsFromTheRemainderOfMinutes = remainderSeconds % 60;  // seconds
-
+        return hours+ "h "+ remainingMinutes + "m "+ remainingSeconds +"s";
        
-       return hour + "h " + minutesFromRemainderSeconds+ "m "+secondsFromTheRemainderOfMinutes+ "s";
 
     }
 
