@@ -11,3 +11,20 @@ Switch(value){
     default:
         // code for value not equal to x or y
 }
+
+Another important thing to know, is that the switch statement can only be used with a limited type of variable data types.
+
+
+Valid Switch Value types:
+
+----------------------------
+byte, short, int, char
+
+Byte, Short, Integer, Character
+
+String
+
+enum
+-------------------------------
+
+important: Cannot use long, float, double or boolean or their wrappers.
