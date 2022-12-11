@@ -15,12 +15,14 @@ public class PlayingCat {
             else{
                 isPlaying = false;
             }
-            
+
         }else{
             if(temperature >= 25 && temperature <= 45){
                 isPlaying = true;
             }
-            isPlaying = false;
+            else{
+                isPlaying = false;
+            }
         }
         return isPlaying;
     }
