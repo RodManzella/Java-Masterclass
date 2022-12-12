@@ -2,7 +2,7 @@ package forStatement;
 
 public class ForLoopChallenge {
     public static void main(String[] args) {
-        
+        determinePrimeInRange(1, 65);
     }
 
     // public static boolean isPrime(int wholeNumber){
@@ -41,18 +41,23 @@ public class ForLoopChallenge {
 
     public static void determinePrimeInRange(int first, int last){
 
-        int counter = 0;
+        int counter = 1;
 
         if(first > 1000 || last > 1000){
             System.out.println("Invalid range");
         }else{
             for(int i = first; i <= last; i++){
                 if(isPrime(i)){
-                    System.out.println("The number "+i+ "IS prime.");
+                    System.out.println("The number "+i+ " IS prime.");
+                    counter++;
                 }else{
-                    System.out.println("The number "+i+ "IS NOT prime.");
+                    System.out.println("The number "+i+ " IS NOT prime.");
+                    counter++;
                 }
-                counter++;  
+                if(counter == 3){
+                    break;
+                }
+                  
             } 
         }
     }
