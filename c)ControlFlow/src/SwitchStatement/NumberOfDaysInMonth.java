@@ -2,7 +2,7 @@ package SwitchStatement;
 
 public class NumberOfDaysInMonth {
     public static void main(String[] args) {
-        System.out.println(getDaysInMonth(2, 2000));
+        System.out.println(getDaysInMonth(9, 2001));
         
     }
 
