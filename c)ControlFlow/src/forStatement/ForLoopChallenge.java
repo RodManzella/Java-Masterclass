@@ -29,7 +29,7 @@ public class ForLoopChallenge {
             return(wholeNumber == 2);
         }
 
-        for(int divisor = 2; divisor < wholeNumber; divisor ++){
+        for(int divisor = 2; divisor <= wholeNumber / 2; divisor ++){
             if(wholeNumber % divisor == 0){
                 return false;
             }
@@ -38,9 +38,7 @@ public class ForLoopChallenge {
         // We could use the halfway mark for a number, as the maximum value.
         // Let´s make those two minor changes, changing < to <=, and wholeNumber, to wholeNumber / 2.
 
-        
-
-        
+    
     }
     
 }
