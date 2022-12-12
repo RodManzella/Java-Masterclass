@@ -28,7 +28,11 @@ public class WhileLoopChallenge {
             
             System.out.println("Even number "+number);
             evenCounter++;
+            if(evenCounter <= 5){
+                break;
+            }
         }
+        
         System.out.println("Total odd numbers = "+OddCount);
         System.out.println("Total even numbers = "+evenCounter);
         
