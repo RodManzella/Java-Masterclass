@@ -1,5 +1,7 @@
 package challenges;
 
+import javax.sound.sampled.SourceDataLine;
+
 public class DigitSumChallenge {
     // In this challenge, your task is to write a method, with the name sumDigits, that has a single parameter
     // named number of type int, and it should return an int.
@@ -12,6 +14,11 @@ public class DigitSumChallenge {
 
     // Use n % 10 to extract the least significant digit.
     // Use n / 10 to drop the last digit as you´re looping.
+    public static void main(String[] args) {
+        int sumOfEachDigit = digitSum(2002344);
+
+        System.out.println(sumOfEachDigit);
+    }
 
     public static int digitSum (int digit){
         int sum = 0;
