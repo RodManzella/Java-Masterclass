@@ -1,7 +1,5 @@
 package challenges;
 
-
-
 public class DigitSumChallenge {
     // In this challenge, your task is to write a method, with the name sumDigits, that has a single parameter
     // named number of type int, and it should return an int.
