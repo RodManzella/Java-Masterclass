@@ -2,6 +2,9 @@ package forStatement.challenges;
 
 public class SumOdd {
 
+    public static void main(String[] args) {
+        
+    }
     
     public static boolean isOdd(int number){
         boolean isOdd = false;
