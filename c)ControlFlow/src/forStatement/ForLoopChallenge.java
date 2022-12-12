@@ -55,6 +55,7 @@ public class ForLoopChallenge {
                     counter++;
                 }
                 if(counter == 3){
+                    System.out.println("Found 3 - exiting for loop");
                     break;
                 }
                   
