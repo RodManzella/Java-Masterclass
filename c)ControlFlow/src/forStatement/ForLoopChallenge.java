@@ -37,8 +37,26 @@ public class ForLoopChallenge {
         return true;
         // We could use the halfway mark for a number, as the maximum value.
         // Let´s make those two minor changes, changing < to <=, and wholeNumber, to wholeNumber / 2.
-
-    
     }
+
+    public static void determinePrimeInRange(int first, int last){
+
+        int counter = 0;
+
+        if(first > 1000 || last > 1000){
+            System.out.println("Invalid range");
+        }else{
+            for(int i = first; i <= last; i++){
+                if(isPrime(i)){
+                    System.out.println("The number "+i+ "IS prime.");
+                }else{
+                    System.out.println("The number "+i+ "IS NOT prime.");
+                }
+                counter++;  
+            } 
+        }
+    }
+
+
     
 }
