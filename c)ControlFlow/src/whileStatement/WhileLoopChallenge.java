@@ -7,12 +7,10 @@ public class WhileLoopChallenge {
     }
 
     public static boolean isEvenNumber(int number){
-        boolean isEven = false;;
+        boolean isEven = false;
 
-        if(number >= 0){
-            if(number % 2 == 0){
-                isEven = true;
-            }
+        if(number % 2 == 0){
+            isEven = true;
         }
         return isEven;
     }
