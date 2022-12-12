@@ -184,6 +184,9 @@ There are three parts of the basic statement´s declaration.
         The increment section is executed after the expression is tested, and is generally the place where the loop variable is incremented.
 
 
+==============================================================================================================================================
+
+
 
 
 
