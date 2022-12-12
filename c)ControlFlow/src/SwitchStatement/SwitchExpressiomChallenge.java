@@ -33,6 +33,33 @@ public class SwitchExpressiomChallenge {
         }; //we are assigning this switch statemement to a variable (;)
         System.out.println(dayOfWeek);
     }
+
+    public static void printWeekDay(int day){
+        String weekDay = "Invalid day";
+
+        if(day == 0){
+            weekDay = "Sunday";
+        }
+        else if(day == 1){
+            weekDay = "Monday";
+        }
+        else if(day == 2){
+            weekDay = "Tuesday";
+        }
+        else if(day == 3){
+            weekDay = "Wednesday";
+        }
+        else if(day == 4){
+            weekDay = "Thursday";
+        }
+        else if(day == 5){
+            weekDay = "Friday";
+        }
+        else if(day == 6){
+            weekDay = "Saturday";
+        }
+        System.out.println(weekDay);
+    }
 }
         
         
