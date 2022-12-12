@@ -184,7 +184,20 @@ There are three parts of the basic statement´s declaration.
         The increment section is executed after the expression is tested, and is generally the place where the loop variable is incremented.
 
 
-==============================================================================================================================================
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Other ways to loop
+
+What if you want to loop until some condition is met, that´s not associated with a known range of values?
+
+
+Java has two types of while loops:
+
+    while: Continue executing code block until the loop expression becomes false.
+
+    do while: Execute the code block once, then continue executing until the loop condition becomes false.
+
+
+    
 
 
 
