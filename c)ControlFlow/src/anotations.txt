@@ -377,6 +377,8 @@ Declaring variables in a switch statement block
             System.out.println(i);  //ERROR: i is out of scope(outside of switch)
         }
 
+==============================================================================================================================================
+
 
 
 
