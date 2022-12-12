@@ -45,7 +45,7 @@ public class NumberOfDaysInMonth {
                 case 10 -> 31;
                 case 11 -> 30;
                 case 12 -> 31;
-                default -> throw new IllegalArgumentException("Unexpected value: " + month);
+                default -> 0;
             };
         }
         return daysInMonth;
