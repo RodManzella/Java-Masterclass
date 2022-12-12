@@ -328,6 +328,58 @@ Local variables and the For statement
 
 
 
+Declaring variables in a switch statement block
+
+    However, the switch statement is different from the if then else statement blocks.
+
+    Consider the code below:
+
+        public static void aMethod(int value){
+            
+            switch (value){
+
+                case 1:
+                    int i = 10;
+                    break;
+                default:
+                    i = value;  // this is ok
+                    System.out.println(i);  // this is ok
+                    break;
+            }
+            Sustem.out.prinln(i);  // Error: i is out of scope outside from switch.
+        }
+
+
+        So, the left and right braces are optional in a switch statement. The code block is whatever is after one case label, and
+        before the next case label, including the break statement. However, the case block has different acess for local variables,
+        than the if else block. In the switch statement, a variable declared in one case label code block can be acessed in another case
+        label code block, but only if that block is after the declaration and initialization of the variable. As you can see here, in
+        the default code block, we had acess to the variable i, and this did not cause an error.
+
+
+        Let´s look at another example of code blocks and local variables in the switch statement.
+
+        public static void aMethod(int value){
+            switch(value){
+                case 1:
+                    System.out.println(i);   //This is NOT ok, because variable i was declared below
+                    break;
+                case 2:
+                    int i = 10;
+                    System.out.println(i);  //this is ok
+                    break;
+                default:
+                    i = value;              //this is ok
+                    System.out.println(i);  //this is ok
+                    break;
+            }
+
+            System.out.println(i);  //ERROR: i is out of scope(outside of switch)
+        }
+
+
+
+
 
 
 
