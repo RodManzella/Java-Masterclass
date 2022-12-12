@@ -15,7 +15,7 @@ public class DigitSumChallenge {
     // Use n % 10 to extract the least significant digit.
     // Use n / 10 to drop the last digit as you´re looping.
     public static void main(String[] args) {
-        int sumOfEachDigit = digitSum(2002344);
+        int sumOfEachDigit = digitSum(12);
 
         System.out.println(sumOfEachDigit);
     }
