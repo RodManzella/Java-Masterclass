@@ -7,15 +7,19 @@ public class WhileLoopChallenge {
     // return true from the method, if it´s an even number, otherwise return false;
     // next, use a while loop to test a range of numbers from 5 up to and including 20, but printing out only even numbers,
     // determined by the call to the isEvenNumber method.
-    public static void main(String[] args) {
-        int i = 4;
 
-        while(i <= 20){
-            i++;
-            if(!isEvenNumber(i)){  // when values are NOT even, continue(ignores next code and goes to loop again)
+    // Step 2 is to modify the while code.
+    // Make it also record the total number of even numbers it has found.
+    public static void main(String[] args) {
+        int number = 4;
+        int max = 20;
+
+        while(number <= max){
+            number++;
+            if(!isEvenNumber(number)){  // when values are NOT even, continue(ignores next code and goes to loop again)
                 continue;
             }
-            System.out.println("Even number "+i);
+            System.out.println("Even number "+number);
             
         }
         
