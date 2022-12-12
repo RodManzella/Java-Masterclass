@@ -7,12 +7,25 @@ public class WhileLoop {
             System.out.println(i);
         }
 
-        
-        int j = 1;
-        while(j <= 5){
-            System.out.println(j);
-            j++;
-        }
+
+        // int j = 1;
+        // while(j <= 5){
+        //     System.out.println(j);
+        //     j++;
+        // }
+
+        // while(true){
+        //     if(j > 5){
+        //         break;
+        //     }
+        //     System.out.println(j);
+        //     j++;
+        // }
+
+       
+            
+
+            
     }
     
 }

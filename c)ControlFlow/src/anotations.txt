@@ -197,7 +197,9 @@ Java has two types of while loops:
     do while: Execute the code block once, then continue executing until the loop condition becomes false.
 
 
-    
+continue
+
+    The continue statement, in it´s simplest form, will stop executing the current iteration of a block code in a loop, and start a new iteration.
 
 
 
