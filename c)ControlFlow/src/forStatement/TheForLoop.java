@@ -22,8 +22,8 @@ public class TheForLoop {
         // Mini challenge
 
         for(double i = 7.5; i <= 10; i += 0.25){
-            double interestAmount = calculateInterest(10000.0, i);
-            System.out.println("10,000 at "+ i + "% interest = "+interestAmount);
+            double interestAmount = calculateInterest(100.00, i);
+            System.out.println("10,000 at "+ i + "% interest = $"+interestAmount);
         }
     }
 
