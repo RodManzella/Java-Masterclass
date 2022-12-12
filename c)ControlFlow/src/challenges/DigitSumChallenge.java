@@ -10,4 +10,17 @@ public class DigitSumChallenge {
     
     // So if 125 is the value passed to the method, the code should sum each digit, in this case, 1 + 2 + 5, and return int 8.
 
+    // Use n % 10 to extract the least significant digit.
+    // Use n / 10 to drop the last digit as you´re looping.
+
+    public static int digitSum (int digit){
+        int sum = 0;
+        
+        while(digit >= 1){
+            int leastSignificantDigit = digit % 10;  //pega o número de menor valor decimal
+            sum += leastSignificantDigit; // soma esse número ao acumulador sum
+            digit = digit / 10;  // diminui a casa decimal do valor digit pra pegar o próximo número de menor valor decimal
+        }
+        return sum;
+    }
 }
