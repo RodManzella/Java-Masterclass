@@ -31,9 +31,7 @@ public class SwitchExpressiomChallenge {
             default -> "Invalid day";
 
         }; //we are assigning this switch statemement to a variable (;)
-
-
-
+        System.out.println(dayOfWeek);
     }
 }
         
