@@ -140,3 +140,53 @@ before you return the value back.
 
 ===========================================================================================================================================
 
+Looping
+
+Looping lets us execute the code a multiple number of times.
+
+There are several looping statements in Java. These statements will continue to execute a code of block repetively,until a condition, or
+some set of conditions is met.
+
+
+
+Java supports three statements for looping:
+
+    for: The for loop is more complex to set up, but is commonly used when you are iterating over a set of values.
+
+    while: The while loop executes until a specified condition becomes false.
+
+    do while: The do while loop always executes at least one and continues until a specified condition becomes false.
+
+
+-----------------------------------------------------------------------------------------------------------------------
+The for statement
+
+The for statement is often referred as the foor loop.
+
+It repeatedly loops something until a condition is satisfied.
+
+
+    for(init; expression; increment){
+        // block of statements
+    }
+
+There are three parts of the basic statement´s declaration.
+
+    These are declared in parentheses, after the for keyword, and are separated by semi-colons.
+
+    These parts are all optional and consist of the following:
+
+        The initialization section declares or sets state, usually declaring and initializing a loop variable, before the loop 
+        begins processing.
+
+        The expression section, once it becomes false, will end the loop processing.
+
+        The increment section is executed after the expression is tested, and is generally the place where the loop variable is incremented.
+
+
+
+
+
+
+
+
