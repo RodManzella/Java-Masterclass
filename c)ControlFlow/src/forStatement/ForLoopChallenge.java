@@ -50,19 +50,13 @@ public class ForLoopChallenge {
                 if(isPrime(i)){
                     System.out.println("The number "+i+ " IS prime.");
                     counter++;
-                }else{
-                    System.out.println("The number "+i+ " IS NOT prime.");
-                    counter++;
-                }
-                if(counter == 3){
-                    System.out.println("Found 3 - exiting for loop");
-                    break;
-                }
-                  
-            } 
+                    if(counter == 3){
+                        System.out.println("Found 3 - exiting for loop");
+                        break;
+                    }   
+                } 
+            }   
         }
+
     }
-
-
-    
 }
