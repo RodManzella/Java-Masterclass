@@ -10,18 +10,27 @@ public class WhileLoopChallenge {
 
     // Step 2 is to modify the while code.
     // Make it also record the total number of even numbers it has found.
+    // break out of the loop once 5 even numbers are found.
+    // Finally, display the total number of odd and even numbers found.
+
     public static void main(String[] args) {
         int number = 4;
         int max = 20;
+        int evenCounter = 0;
+        int OddCount = 0;
 
         while(number <= max){
             number++;
             if(!isEvenNumber(number)){  // when values are NOT even, continue(ignores next code and goes to loop again)
+                OddCount++;
                 continue;
             }
-            System.out.println("Even number "+number);
             
+            System.out.println("Even number "+number);
+            evenCounter++;
         }
+        System.out.println("Total odd numbers = "+OddCount);
+        System.out.println("Total even numbers = "+evenCounter);
         
     }
 
