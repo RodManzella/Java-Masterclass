@@ -3,7 +3,7 @@ package forStatement.challenges;
 public class SumOdd {
 
     public static void main(String[] args) {
-        
+        System.out.println(sumOdd(1, 100));
     }
     
     public static int sumOdd(int start, int end){
