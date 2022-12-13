@@ -69,6 +69,7 @@ public class ReadingUserInput {
                 System.out.println("Characters not allowed!!! try again.");
 
             }
+            scan.close();
             // The reason you create a variable in the parentheses of the catch keyword, is if you wanted to acess information about the
             // exception.
 
