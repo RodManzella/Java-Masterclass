@@ -57,12 +57,20 @@ public class ReadingUserInput {
 
         System.out.println("What year where you born?");
 
+
         boolean valiDOB = false;
         int age = 0;
         do{
             System.out.println("Enter a year of birth >= "+(currentYear - 125) +" and <= "+(currentYear));
-            age = checkData(currentYear, scan.nextLine());
-            valiDOB = age < 0 ? false: true;  
+            try{
+                age = checkData(currentYear, scan.nextLine());
+                valiDOB = age < 0 ? false: true;  
+            }catch(NumberFormatException badUserData) {
+                System.out.println("Characters not allowed!!! try again.");
+
+            }
+            // The reason you create a variable in the parentheses of the catch keyword, is if you wanted to acess information about the
+            // exception.
 
         } while(!valiDOB);  //!valiDOB == true
         // Se age < 0, o operador ternário joga false para valiDOB, esse valor é invertido pelo ! no while e o loop continua
