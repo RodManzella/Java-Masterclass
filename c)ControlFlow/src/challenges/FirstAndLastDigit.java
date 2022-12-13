@@ -7,21 +7,20 @@ public class FirstAndLastDigit {
     //If the number is negative, then the method should return - 1 to indicate a negative value
 
     public static void main(String[] args) {
-        
+        System.out.println(sumFirstAndLastDigit(123));
     }
 
     public static int sumFirstAndLastDigit(int number){
         int leastSignificantDigit = number % 10;
         int mostSignificantDigit = 0;
+        
 
         while(number > 1){
             number = number / 10;
-            
-            if(number <  1){
-                mostSignificantDigit = number % 10;
-            }
+            mostSignificantDigit = number % 10; 
         }
-        return leastSignificantDigit + mostSignificantDigit;
+
+        return mostSignificantDigit + leastSignificantDigit;
     }
     
 }
