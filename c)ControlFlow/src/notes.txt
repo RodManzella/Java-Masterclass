@@ -525,6 +525,17 @@ Parsing values and Reading input using System.console()
         -  You might also remember, that most of the other operators aren´t applicable to Strings
 
 
+Wrapper methods to parse strings to numeric values
+
+
+     You´ll remember we´ve used the wrapper classes to get min and max values
+
+     In this case, we´re going to use a static method, on the wrapper class, to let that class do the transformation for us.
+
+        - Wrapper: Integer     |     Wrapper method: parseInt(String)
+        
+        - Wrapper: Double      |     Wrapper method: parseDouble(String)
+
     
 
         
