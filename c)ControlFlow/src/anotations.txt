@@ -378,7 +378,7 @@ Declaring variables in a switch statement block
         }
 
 ==============================================================================================================================================
-
+The class, the object, static & instance fields and methods
 
 
 
