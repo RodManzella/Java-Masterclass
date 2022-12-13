@@ -11,9 +11,13 @@ public class FirstAndLastDigit {
     }
 
     public static int sumFirstAndLastDigit(int number){
+        int invalidValue = - 1;
         int leastSignificantDigit = number % 10;
         int mostSignificantDigit = 0;
         
+        if(number < 0){
+            return invalidValue;
+        }
 
         while(number > 1){
             number = number / 10;
