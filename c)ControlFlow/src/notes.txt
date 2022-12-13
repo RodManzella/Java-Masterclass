@@ -505,6 +505,26 @@ Static and instance methods
 
 ===============================================================================================================================================
 Parsing Values and reading Input using System.console()
+
+We´re going to create an interactive application, where a user will enter their name, and year of birth, and then the application will
+calculate the current age of the user.
+
+Before we start though, let´s talk about parsing data.
+
+
+
+Parsing values and Reading input using System.console()
+
+    When we read data in, from either a file, or from a user input, it´s common for the data to be initially a String, which we´ll need
+    to convert to a numeric value.
+
+    Let´s review what happens when our numeric data is really a String:
+        
+        -You may remember that the plus symbol means something different for numeric values, than it does for Strings.
+
+        -  You might also remember, that most of the other operators aren´t applicable to Strings
+
+
     
 
         
