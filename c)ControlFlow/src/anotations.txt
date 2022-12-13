@@ -468,7 +468,10 @@ Static and instance fields
     Integer.SIZE for example. This data was stored on the class, and not on an instance of the class.
 
 
-    
+    When the static keyword isn´t used, it´s called an instance field. Until the class is instantiated, and an object created, the instance
+    field has no place in memory. These instance fields can have different values for every instance created. This field is acessed using
+    the variable name for the object, and the dot notation with the field name. In the same way there are static fields and instance fields,
+    there are static methods and instance methods.
 
 
 
