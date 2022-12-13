@@ -560,7 +560,63 @@ terminating the entire process.
 
 ===============================================================================================================================================
 
-    
+We know that Intellij´s IDE can´t handle console.log()
+
+But what we can do is, program our code, so we handle this situation. This is done by what´s called catching and handling an exception.
+
+So, what´s an exception?
+
+    - An exception is an error that happens in code. 
+
+    - Some types of erros can be predicted and named.
+
+    - NullPointerException, which is the exception we saw when we tried to run our code using System.Console() in IntelliJ, is an example
+      of a named Java exception
+
+    - Java has many of these named exceptions, and if you go to the JDK´s exception API page, you can see them all.
+
+    - We´ll be getting deeper into exceptions later, but right now, we want to try a different approach, if we do get this error.
+
+    - We can do this by setting up the code to catch the exception.
+
+
+
+Catching an exception
+
+    - An exception is caught, first by creating a code block around the code, that might get the error.
+
+    - This is done with the try statement code block.
+
+
+The try statement
+
+    - The try statement has two code blocks.
+
+    - The first is declared directly after the try keyword, and this code block ends, and is followed by the declaration of the catch
+      keyword.
+
+    - The cath keyword includes the declaration of variables, in parentheses, and then has it´s own code block.
+
+        try{
+            // statements that might get erros
+
+        } catch(Exception e){
+                // code to 'handle' the exception.
+        }
+
+
+        - So, the format is the keyword try, followed by an opening brace for the code segment. The closing brace is followed by the
+          keyword catch and parentheses, where a declaration is required. The declaration includes the type of error, and a variable
+          name. In this code, we shwo the type to be Exception, and the variable name, which can be any valid name is just e. This is
+          followed by another code segment, which us the code to handle, or react to the exception that could be predicted.
+
+          
+
+
+
+
+
+
 
 
 
