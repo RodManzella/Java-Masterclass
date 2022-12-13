@@ -536,7 +536,27 @@ Wrapper methods to parse strings to numeric values
         
         - Wrapper: Double      |     Wrapper method: parseDouble(String)
 
-----------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+Now that we´ve covered dealing with numeric values that are in Strings, let´s talk about where that input might come from. This is either in
+the form of an input file, a console, or some kind of user interface.
+
+When reading data from the console, we have some different options:
+
+    System.in:  Like System.out, Java provides System.in which can read input from the console or terminal. It´s node easy to use for beginners,
+                and lots of code has been built around it, to make it easier.
+
+    System.console: This is Java´s solution for easier support for reading a single line and prompting user for information. Although this is
+                    easy to use, it doesn´t work with I.D.E´S because these enviroments disable it.
+
+    Command line Arguments: This is calling the Java program and specifying data in the call. This is very commonly used but doesn´t let us
+                            create an interactive application in a loop in Java.
+
+    Scanner: The Scanner class was build to be a common way to read input, either using System.in or a file. For beginners, it´s much easier
+             to understand than bare bones System.in
+
+    
+
+
 
     
 
