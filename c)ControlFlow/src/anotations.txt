@@ -499,7 +499,11 @@ Static and instance methods
 
     The String class has many instance methods defined on it, which we can use to manipulate Strings.
 
-    I´ll be introducing you to a special class for reading
+    I´ll be introducing you to a special class for reading input. With this class, we´ll be using instance methods on a Scanner object
+    we create, to get input from a user. We´ll also be using special static methods, on wrapper classes, to parse numeric values out of
+    Strings.
+
+    =============================================================================================================================================
         
         
 
