@@ -29,6 +29,7 @@ public class ReadingUserInputChallenge {
                 sum += number;
             }catch(NumberFormatException nfe){
                 System.out.println("Invalid number");
+                
                 // If the code in line 27 throws an exception, anything else in that try block is skipped
             }
         }
