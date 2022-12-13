@@ -381,6 +381,75 @@ Declaring variables in a switch statement block
 The class, the object, static & instance fields and methods
 
 
+In the previous lesson, we talked about local variables and scope.
+
+Local variables are a way to store and manipulate temporary data.
+
+In addition to local variables, we can set up data to be defined, and used as part of a class, or an object.
+
+
+
+First, attributes on classes are another way to store data.
+
+Second, i want to introduce you to some static methods on the wrapper classes, which are classes we previously looked at, but we
+haven´t used any methods on these classes yet.
+
+These methods will help parse strings into numeric values.
+
+And finally, i want to introduce you to a special class for reading input, which we´ll be using in the last part of this section, to
+create an interactive program.
+
+Before we use that class, it will help if we understand some very basic concepts with classes.
+
+
+
+A class
+
+    A class can be described as:
+     - A custom data type
+     - A special code block that contains methods.
+
+
+    A class is like an empty form. It describes information, or placeholders, for data that´ll be filled in when that form is given to A
+    unique individual. The class may have a field for name, the object will have a value in the name field, which will be unique to the
+    object. The class may have a field for address, the object will have values for the address field, and so on. The process of copying
+    that empty form, and then delivering it to some process or person to fill in the blanks, is a loose analogy to what happens when you
+    create an object.
+
+    The empty form(the class) is the template for the data to be collected, The populated form(object) may be completely different each time
+    because of the values used to fill in the data. But the data being collected each time, is determined by the class, or the form in this
+    analogy.
+
+    An object is called an instance of a particular class. In this course, we-ll often use the word instance interchangeably with
+    object. 
+
+    This means an object is created by instantiating a class.
+
+    The class provides a shape, or framework, that describes the object being created.
+
+
+Declaring and instantiating a new object from a class
+
+    The most common way to create an object, is to use the new keyword
+    
+    The new keyword creates an instance, and you can sometimes pass data, when creating an instance to set up data on that object
+
+    The String is special, because we can create a String, just by using a literal which we´ve seen.
+
+    String s = "Hello";
+    but we could also use new:
+    String s = new String("Hello");
+
+    Like other data types, you can assign this object´s memory location(address or reference) to a local variable, as we´ve done 
+    with this String.
+
+    We´ve assigned to the local variable s, an instance of String. All then manipulation of the object´s data and methods are then
+    done using the local variable name.
+
+    In both of these statements(String s = "Hello";  and  String s = new String("Hello"); ) ,we´re creating a new object of type
+    String, and initializing it with the text "Hello", and assigning it to a variable named s. The second statement makes this a
+    bit clearer. When we crate an object, we can pass initial data to be associated with it in parentheses.
+
 
 
 
