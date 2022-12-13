@@ -450,6 +450,26 @@ Declaring and instantiating a new object from a class
     String, and initializing it with the text "Hello", and assigning it to a variable named s. The second statement makes this a
     bit clearer. When we crate an object, we can pass initial data to be associated with it in parentheses.
 
+    We´ve stated previously, that the class can be thought of as a special data type. This is because you can create variables on
+    classes, and these are called fields, or attributes on the class or object. There are two ways to create fields on classes,
+    one is with the static keyword, and the other is without the static keyword.
+
+
+
+Static and instance fields
+
+
+    When the STATIC keyword is used, it´s called a static field on the class. This means that the value of that field always stays
+    with the class. It´s stored in a special memory location for values that aren´t changing constantly, unlike local variables and
+    objects. In our form of analogy, this would be a field that is pre-populated on the form, and would not change for any of the
+    copied forms. But unlike the form, this type of field in a class, doesn´t get copied down to the object. It maintains it´s single 
+    value on the master copy, the class. The field in memory is acessed differently, because we can acess that field using the class name
+    with dot notation, and we´ve done that already. When we´ve looked at wrappers, we acessed Integer.MAX_VALUE, Integer.MIN_VALUE, and
+    Integer.SIZE for example. This data was stored on the class, and not on an instance of the class.
+
+
+    
+
 
 
 
