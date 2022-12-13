@@ -5,7 +5,13 @@ public class ReadingUserInput {
         
         int currentYear = 2022;
 
-        System.out.println(getInputFromConsole(currentYear));
+        try{
+            System.out.println(getInputFromConsole(currentYear));  // No IntelliJ isso dá error (NullPointerException)
+            //tentamos executar esse código
+        }catch(NullPointerException e){  //ao executar aquele código, tivemos a exceção NullPointerException
+            System.out.println(getInputFromScanner(currentYear));  //Para não finalizar o programa, executamos esse.
+        }
+        
         
 
         
