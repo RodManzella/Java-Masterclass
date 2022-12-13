@@ -28,12 +28,12 @@ public class ReadingUserInput {
     
     }
 
-    public static String getInputFromConsole(int currentyear){
+    public static String getInputFromConsole(int currentYear){
         String name = System.console().readLine("Hi. what´s your name? ");  //IDE´S disable it, can only be executed from terminal.
         System.out.println("Hi "+ name +" Thanks for taking the course!");
 
         String dateOfBirth = System.console().readLine("What year were you born?");
-        int age = Integer.parseInt(dateOfBirth);
+        int age = currentYear - Integer.parseInt(dateOfBirth);
         return "So you are "+ age+ " years old";
         
     }
