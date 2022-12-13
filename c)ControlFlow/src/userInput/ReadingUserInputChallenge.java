@@ -33,6 +33,7 @@ public class ReadingUserInputChallenge {
             }
         }
         System.out.println("The sum of the 5 numbers = "+ sum);
+        scan.close();
 
 
     }
