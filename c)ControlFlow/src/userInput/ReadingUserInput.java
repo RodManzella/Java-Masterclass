@@ -3,7 +3,12 @@ package userInput;
 public class ReadingUserInput {
     public static void main(String[] args) {
         
-    //     int currentYear = 2022;
+        int currentYear = 2022;
+
+        System.out.println(getInputFromConsole(currentYear));
+        System.out.println(getInputFromScanner(currentYear));
+
+        
     //     String usersDateOfBirth = "1999";
 
     //     int dateOfBirth = Integer.parseInt(usersDateOfBirth);  //Parsing String userDateOfBirth to integer
@@ -18,6 +23,22 @@ public class ReadingUserInput {
     //     double ageWithPartialYear = Double.parseDouble(usersAgeWithPartialYear);
     //     System.out.println("The user says he´s "+ ageWithPartialYear);
     // 
+
+        
     
+    }
+
+    public static String getInputFromConsole(int currentyear){
+        String name = System.console().readLine("Hi. what´s your name? ");  //IDE´S disable it, can only be executed from terminal.
+        System.out.println("Hi "+ name +" Thanks for taking the course!");
+
+        String dateOfBirth = System.console().readLine("What year were you born?");
+        int age = Integer.parseInt(dateOfBirth);
+        return "So you are "+ age+ " years old";
+        
+    }
+
+    public static String getInputFromScanner(int currenYear){
+        return "";
     }
 }
