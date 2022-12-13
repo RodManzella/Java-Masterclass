@@ -536,6 +536,8 @@ Wrapper methods to parse strings to numeric values
         
         - Wrapper: Double      |     Wrapper method: parseDouble(String)
 
+----------------------------------------------------------------------------------------------------------------------------------------
+
     
 
         
