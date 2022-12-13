@@ -56,9 +56,33 @@ public class ReadingUserInput {
         System.out.println("Hi, "+name+" , thanks for taking the course!");
 
         System.out.println("What year where you born?");
-        String dateOfBirth = scan.nextLine();
-        int age = currentYear - Integer.parseInt(dateOfBirth);
+
+        boolean valiDOB = false;
+        int age = 0;
+        do{
+            System.out.println("Enter a year of birth >= "+(currentYear - 125) +" and <= "+(currentYear));
+            age = checkData(currentYear, scan.nextLine());
+            valiDOB = age < 0 ? false: true;  
+
+        } while(!valiDOB);  //!valiDOB == true
+        // Se age < 0, o operador ternário joga false para valiDOB, esse valor é invertido pelo ! no while e o loop continua
+        // Se age > 0, o operador ternário joga true para valiDOB, esse valor é invertido pelo ! no while e o loop termina(valor foi válido)
+
+
+
+        
 
         return "So you are "+age+" years old";
+    }
+
+    public static int checkData(int currentYear, String dateOfBirth){
+
+        int dob = Integer.parseInt(dateOfBirth);
+        int minumumYear = currentYear - 125;
+
+        if((dob < minumumYear) || (dob > currentYear)){
+            return -1;  
+        }
+        return (currentYear - dob);
     }
 }
