@@ -610,7 +610,50 @@ The try statement
           name. In this code, we shwo the type to be Exception, and the variable name, which can be any valid name is just e. This is
           followed by another code segment, which us the code to handle, or react to the exception that could be predicted.
 
-          
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+The Scanner class
+
+    - The Scanner class is described as a simple text Scanner, witch can parse primitive types and Strings.
+
+    - To use the Scanner class, we have to create an instance of Scanner.
+
+    - You´ll remember, this means we´re creating an object of type Scanner. We´ll use the new keyword to do it.
+
+        The newkeyword is used in what Java calls a Class Instance Creation Expression.
+
+            - ClassName variableName = new ClassName();
+        
+        And often in many cases, we can pass parameters in the parentheses, as we saw with methods.
+
+            - ClassName variableName =  new ClassName(argument1, argument2);
+
+            - And we saw we could do this with the String class, passing the text in the parentheses.
+
+
+Instantiating Scanner
+
+    - For reading input from the console or terminal, we instantiate a Scanner object using new, followed by the Scanner
+      class name, and passing in System.in, in the parentheses.
+
+      Scanner sc = new Scanner(System.in)
+
+
+    - For reading input from a file, we instantiate a Scanner object using new, again with the Scanner class name, but pass in a File object
+      in the parentheses.
+
+      Scanner sc = new Scanner(new File("nameOfFileOnFileSystem"));
+
+    - File is another class provided by Java, for reading and writing files.
+    
+
+
+
+    
+
+
+
+
 
 
 
