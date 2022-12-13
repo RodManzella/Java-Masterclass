@@ -2,7 +2,7 @@ package challenges;
 
 public class NumberPalindrome{
     public static void main(String[] args) {
-        boolean palindrome = isPalindrome(101);
+        boolean palindrome = isPalindrome(202);
         System.out.println(palindrome);
         
     }
