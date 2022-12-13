@@ -402,7 +402,7 @@ create an interactive program.
 Before we use that class, it will help if we understand some very basic concepts with classes.
 
 
-
+-----------------------------------------------------------------------------------------------------------------
 A class
 
     A class can be described as:
@@ -427,7 +427,7 @@ A class
 
     The class provides a shape, or framework, that describes the object being created.
 
-
+----------------------------------------------------------------------------------------------------------------------------
 Declaring and instantiating a new object from a class
 
     The most common way to create an object, is to use the new keyword
@@ -455,7 +455,7 @@ Declaring and instantiating a new object from a class
     one is with the static keyword, and the other is without the static keyword.
 
 
-
+-----------------------------------------------------------------------------------------------------------------------------------
 Static and instance fields
 
 
@@ -472,6 +472,37 @@ Static and instance fields
     field has no place in memory. These instance fields can have different values for every instance created. This field is acessed using
     the variable name for the object, and the dot notation with the field name. In the same way there are static fields and instance fields,
     there are static methods and instance methods.
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Static and instance methods
+
+
+    Again, the static keyword is used to differentiate these two kinds of methods.
+
+    A static method can be called direcly using the Class name and dot notation. In other words, you don´t need an instance
+    to use this method.
+
+    Example: Integer.parseInt("123);
+    A method called parseInt is called directly from the Class Integer.
+
+
+
+    An instance method requires an instance existing firt, and then the method can be called on that instance.
+    
+    Method is acessed by ObjectVariable.methodname
+
+    In the example below, i am showing that a String literal with a value "hello", is really an object of type String.
+
+        "hello".toUpperCase();
+
+    A method called toUpperCase is called on the instance of a String with value "hello"
+
+    The String class has many instance methods defined on it, which we can use to manipulate Strings.
+
+    I´ll be introducing you to a special class for reading
+        
+        
+
 
 
 
