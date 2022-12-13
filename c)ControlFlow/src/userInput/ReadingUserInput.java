@@ -6,7 +6,7 @@ public class ReadingUserInput {
         int currentYear = 2022;
 
         System.out.println(getInputFromConsole(currentYear));
-        System.out.println(getInputFromScanner(currentYear));
+        
 
         
     //     String usersDateOfBirth = "1999";
@@ -31,7 +31,7 @@ public class ReadingUserInput {
     public static String getInputFromConsole(int currentYear){
         String name = System.console().readLine("Hi. what´s your name? ");  //IDE´S disable it, can only be executed from terminal.
         System.out.println("Hi "+ name +" Thanks for taking the course!");
-
+        //Apparently vsCode allows it...
         String dateOfBirth = System.console().readLine("What year were you born?");
         int age = currentYear - Integer.parseInt(dateOfBirth);
         return "So you are "+ age+ " years old";
