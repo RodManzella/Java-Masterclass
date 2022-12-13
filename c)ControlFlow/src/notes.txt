@@ -645,7 +645,18 @@ Instantiating Scanner
       Scanner sc = new Scanner(new File("nameOfFileOnFileSystem"));
 
     - File is another class provided by Java, for reading and writing files.
-    
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Using the import statement
+
+We haven´t talked about the import statement yet, but this statement lets us use classes from other people´s code.
+
+In this case, Java provides a library of code, which includes the Scanner class, in a library called java.util
+
+    - import java.util.Scanner;
+
+
 
 
 

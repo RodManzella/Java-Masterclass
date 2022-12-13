@@ -1,4 +1,5 @@
 package userInput;
+import java.util.Scanner;
 
 public class ReadingUserInput {
     public static void main(String[] args) {
@@ -44,7 +45,20 @@ public class ReadingUserInput {
         
     }
 
-    public static String getInputFromScanner(int currenYear){
-        return "";
+    public static String getInputFromScanner(int currentYear){
+        Scanner scan = new Scanner(System.in); // we can parse primitive types and strings using methods from Scanner
+        // The Scanner class has a method called nextLine(), but unlike System.console().readLine(), it doesn´t support
+        // a prompt being passed in( readline() ). So, in this case, we need to split the prompt, from the reading of
+        // The data, when using the Scanner.
+        System.out.println("Hi, what is your name?");
+        String name = scan.nextLine();  // scan is our local variable(named scan), that we can use to execute instance methods on.
+
+        System.out.println("Hi, "+name+" , thanks for taking the course!");
+
+        System.out.println("What year where you born?");
+        String dateOfBirth = scan.nextLine();
+        int age = currentYear - Integer.parseInt(dateOfBirth);
+
+        return "So you are "+age+" years old";
     }
 }
