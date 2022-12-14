@@ -114,7 +114,7 @@ What is null?
 
     - field with primitive data types are never null.
 
-    - So, why is the color, make, and model of the car null? Well, all of these fields were declared with the String data type.
+    - So, why is the color, make, and model of the car null? Well, all of these fields were declared with the String data type,
 
 
     
