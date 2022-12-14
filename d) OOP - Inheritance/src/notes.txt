@@ -114,7 +114,30 @@ What is null?
 
     - field with primitive data types are never null.
 
-    - So, why is the color, make, and model of the car null? Well, all of these fields were declared with the String data type,
+    - So, why is the color, make, and model of the car null? Well, all of these fields were declared with the String data type, and we
+      haven´t assigned values to them. We know from previous lectures that Strings are really objects, and not primitive data types,
+      so Java assigned each a null reference.
+
+    - the other thind i want you to notice about the output we got, was that doors was printed with the value 0(Car class) and that the world
+      convertible wasn´t printed in the output. So, how is that possible? We didn´t set doors or convertible to any values in our class, but
+      we didn´t get any erros when running this code. And now, we´re seeing another difference between local variables, and fields declared on
+      a class.
+
+    - And this is that a field with primitive data type, will get assigned a defaul value by Java.
+
+
+Default values for fields on classes
+
+    - Fields on clases are assigned default values, intrinsically by Java, if not assigned explicitly.
+
+        boolean:                         defalt value assigned is false
+
+        byte, short, int, long, char:    default value assigned is 0
+
+        double, float:                   default value assigned is 0.0
+
+        any other data type:             default value assigned is null
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 
     
