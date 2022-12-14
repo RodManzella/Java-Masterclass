@@ -5,6 +5,14 @@ public class Car{
     private int doors;
     private boolean convertible;
 
+    public void describeCar(){
+        System.out.println(doors +" -Door "+
+        color + " "+
+        make + " "+
+        model + " "+
+        (convertible ? "Convertible":  ""));
+    }
+
 
     // Here we created five fields.
     // These are fields, because they are defined in the class´s code block, or the body of the class, and not in a method.
