@@ -184,11 +184,30 @@ Interesting details:
     - We haven´t included the = new Car part. Already, IntelliJ is saying "Variable car may not have been initialized" where we are
       attempting to call the setter method, on the car variable. You can´t use an unitialized variable, which car is, because we haven´t
       assigned any object reference to it. But now, consider what happens, if we instead assign null to car
-
+ 
     Car car = null;
     car.setMake("Porsche");
 
     - So IntelliJ is not showing any erros when we do this, but let´s try running it.
+
+        Exception in thread "main" java.lang.NullPointerExceptio: Cannot invoke "Car" at Main.main
+
+    - We actually get an exception, NullPointerException, and the additional information that we can´t call a method, or invoke a method
+      (instance method) on a null instance. And what that essentialy means, is we´ve defined a variable called car, but it doesn´t have a
+      reference to a valid instance of a Car.
+    
+    - So we can´t run a method on a null, and we couldn´t set, or get attributes on a null.
+
+    - So there´s a dinstinction here i want to point out, between an uninitialized variable, and a variable with a null reference.
+
+    - An uninitialized variable, as we saw in the first instance, causes a compile time error. But a variable with a null reference can be
+      be used in code, without compile errors, but will throw an expection at runtime.
+
+    - So, in both of these scenarios, we haven´t created an object from the Car template, which of course is the class. So, that´s why you need
+      to make sure that new is always executed. The bottom line i´m trying to say here is that, make sure when you´re creating objects, you always
+      use the keyword new, and them include the name of the class, and then follow it with the parentheses.
+    
+    
 
     
 
