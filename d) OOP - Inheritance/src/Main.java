@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         Car car = new Car();
+
         car.setMake("Porsche");  //Setting the atribute make(String) to "Porsche of the instance car".
         car.setModel("Carrera");
         car.setDoors(2);
