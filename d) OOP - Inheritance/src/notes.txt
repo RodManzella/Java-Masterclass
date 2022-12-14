@@ -67,10 +67,45 @@ Acess modifiers for the class
     - A top level class has only two valid acess valid modifier options: public, or none.
         
         public: public means any other class in any package can acess this class.
-        
+
         (empty): When the acess modifier is omitted, this class has special meaning, called package acess, meaning that the class is
                  acessible only to classes in the same package.
 
+
+Acess modifiers for class members
+
+    - An acess modifier at member level, allows granular control over class members.
+
+    - The valid acess modifiers are shown in this table from the least restrictive, to the most restrictive
+
+        public: public means any other class in any package can acess this class.
+
+        protected: protected allows classes in the same package, and any subclasses in other packages, to have acess to the member
+
+        (omitted): When the modifier is omitted(not specified), this class has special meaning, called package acess, meaning the member
+                   is acessible only to classes in the same package.
+
+        private: private means that no other class can acess this member
+
+    - As a general rule, all your fields should be private, unlike the class, where we´ll usually use public. So why would we want to make
+      all the fields on a class private? Doesn´t this mean that nobody can acess them? This practice has a name, encapsulation, and it´s A
+      key fundamental rule of Object Oriented Programming.
+
+
+Encapsulation
+
+
+    - Encapsulation in Object Oriented Programming usually has two meanings.
+
+    - One is the bundling(empacotamento) of behaviour and attributes on a single object.
+
+    - The other is the practice of hiding fields, and some methods, from public acess.
+
+    - In general, when we´re talking about encapsulation, we´re talking about information hiding, or hiding the internal workings of a 
+      particular object. When we make our attributes private, we can then create methods to acess the data, with different degrees of
+      acess allowed, as needed.
+
+    
 
 
 
