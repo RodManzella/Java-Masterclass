@@ -40,7 +40,19 @@ public class BankAccount {
 
     public void deposit(double depositAmount){
         accountBalance += depositAmount;
-        System.out.println("Deposit of $"+depositAmount+" made. New balance is $"+ accountBalance);
+        System.out.println("Deposit of $"+depositAmount+" made. New balance is $"
+        + accountBalance);
+    }
+
+    public void withdrawal(double withdrawalAmount){
+        if(accountBalance - withdrawalAmount < 0){
+            System.out.println("Insuficiente funds! You only have $"+accountBalance+
+            " in your account" );
+        }else{
+            accountBalance -= withdrawalAmount;
+            System.out.println("Withdrawal of $"+withdrawalAmount +
+            " processed, remaining balance = $"+accountBalance);
+        }
     }
 
     
