@@ -165,6 +165,15 @@ What are getters and setters? Why should we use them?
       the class itself, and doesn´t need to be exposed to the outside world.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
+this keyword
+
+     - this is a special keyword in Java.
+     
+     - What it really refers is to the instance that was cerated when the object was instantiated.
+
+     - So "this" is a special reference name for the object or instance, which can be used to describe itself.
+
+     - And we can use "this" to acess fields on the class.
     
 
 
