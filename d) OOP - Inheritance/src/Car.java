@@ -25,8 +25,9 @@ public class Car{
         return convertible;
     }
 
-    public void setMake(String make){
-        this.make = make;
+    public void setMake(String make){  
+        this.make = make;  //update this variable here, private String make(field), with the contents of the parameter make, that was passed to us.
+
     }
 
     public void describeCar(){
