@@ -228,6 +228,12 @@ You can, and should, specify an appropriate access modifier, to control who shou
           // Constructor code is code to be executed as the object is created.
       }
     }
+  
+
+The default constructor
+
+If a class contains no constructor declarations, then a default constructor is implictly declared.
+
     
 
     
