@@ -163,6 +163,8 @@ What are getters and setters? Why should we use them?
     - It´s usual to name a setter method with the set prefix, followed by the field name, in lower camel case, but again, this is matter of
       form. There may be cases where we won´t have any setter methods, for some of our private fields. Maybe this is data only needed within
       the class itself, and doesn´t need to be exposed to the outside world.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
     
 
 
