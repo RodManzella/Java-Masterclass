@@ -26,8 +26,15 @@ public class Car{
     }
 
     public void setMake(String make){  
-        this.make = make;  //update this variable here, private String make(field), with the contents of the parameter make, that was passed to us.
+        if(make == null) this.make = "Unknown";
 
+        String lowerCaseMake = make.toLowerCase();      
+        switch(lowerCaseMake){
+            case "holden", "porsche","tesla" -> this.make = make;
+            default -> {
+                this.make = "Unsupported";
+            }
+        } 
     }
 
     public void setModel(String model) {
