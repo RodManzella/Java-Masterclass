@@ -139,6 +139,8 @@ Default values for fields on classes
         any other data type:             default value assigned is null
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
+What are getters and setters
+
 
     
 
