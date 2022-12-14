@@ -35,6 +35,13 @@ public class Car{
                 this.make = "Unsupported";
             }
         } 
+        // So you can see how it´s very useful to have this type of functionality, the validation.
+        // So what can you do with the setter methods is, you can set up all the rules related to that class, what is valid, and what is not
+        // valid. You can have all that functionality set up, within the car class itself, so that these rules are in place as we´re creating
+        // the object. What that means is, the code that´s creating objects, can´t make invalid objects, so to speak. In other words, it can´t
+        // assign a make, that we haven´t defined  as valid in our car class. So that´s the reason, and that´s really the whole concept of
+        // encapsulation, is that we´re not allowing people to acess the field directly. We force them to go through a controlled way of setting
+        // up the data on the object. Using a setter method, we can actually make sure that the data in our objects is valid data.
     }
 
     public void setModel(String model) {
