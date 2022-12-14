@@ -105,6 +105,18 @@ Encapsulation
       particular object. When we make our attributes private, we can then create methods to acess the data, with different degrees of
       acess allowed, as needed.
 
+============================================================================================================================================
+What is null?
+
+    - null is a special keyword in Java, meaning the variable or attribute has a type, but no reference to an object.
+
+    - This means that no instance, or object, is assigned to the variable or field.
+
+    - field with primitive data types are never null.
+
+    - So, why is the color, make, and model of the car null? Well, all of these fields were declared with the String data type.
+
+
     
 
 
