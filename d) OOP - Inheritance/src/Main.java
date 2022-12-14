@@ -16,5 +16,16 @@ public class Main {
         // These are a special set of methods, called getters, and setters. So, what are getters and setters?(see txt)
 
         car.describeCar();
+
+        Car targa =  new Car();
+
+        targa.setMake("Porsche");  //Setting the atribute make(String) to "Porsche of the instance car".
+        targa.setModel("Carrera");
+        targa.setDoors(2);
+        targa.setConvertible(false);
+        targa.setColor("Red");
+
+        targa.describeCar();
+
     }
 }
