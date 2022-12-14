@@ -139,7 +139,31 @@ Default values for fields on classes
         any other data type:             default value assigned is null
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
-What are getters and setters
+What are getters and setters? Why should we use them?
+
+    - A getter is a method on a class, that retrives the value of a private field, and returns it.
+
+    - A setter is a method on a class, that sets the value of a private field.
+
+    - The purpose of these methods is to control, and protect acess to private fields.
+
+    - Another important aspect, is that the getter and setter method signatures are part of car's public interface, but the attribute names
+      and types aren´t. This means that we can chage things internally, like the name or type of an attribute, but as long as we use the
+      same getter and setter method, these changes should  have no effect on code that uses our class. Our internal changes are hidden from
+      our users.
+
+    - A getter method usually just returns the value of a private attribute. It´s usual to name a getter method with the get prefix, followed
+      by the field name, in lower camel case, but this is not required.
+
+    - You could have getter methods for attributes that are not really declared on your class, but that are derived in some way.
+
+    - A setter may simply just assign the argument passed to the attribute, but it often contains code to validate dara, check additional
+      security requirements, ensure immutability of the field value, or any other code required to protect and validate an object´s state.
+
+    - It´s usual to name a setter method with the set prefix, followed by the field name, in lower camel case, but again, this is matter of
+      form. There may be cases where we won´t have any setter methods, for some of our private fields. Maybe this is data only needed within
+      the class itself, and doesn´t need to be exposed to the outside world.
+    
 
 
     
