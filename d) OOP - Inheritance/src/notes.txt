@@ -181,7 +181,15 @@ Interesting details:
     Car car;
     car.setMake("Porsche");
 
-    We haven´t included the = new Car part. Already, IntelliJ is saying "Variable car may not have been initialized
+    - We haven´t included the = new Car part. Already, IntelliJ is saying "Variable car may not have been initialized" where we are
+      attempting to call the setter method, on the car variable. You can´t use an unitialized variable, which car is, because we haven´t
+      assigned any object reference to it. But now, consider what happens, if we instead assign null to car
+
+    Car car = null;
+    car.setMake("Porsche");
+
+    - So IntelliJ is not showing any erros when we do this, but let´s try running it.
+
     
 
 
