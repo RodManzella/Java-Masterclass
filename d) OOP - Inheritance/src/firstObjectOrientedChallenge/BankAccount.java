@@ -7,6 +7,8 @@ public class BankAccount {
     private String emailOfAccountHolder;
     private String phoneOfAccountHolder;
 
+    // From the constructor with no parameters, we´ll call the one with five parameters, and pass in literal values. So, to do that,
+    // we type, this, followed by parentheses
     public BankAccount(){
         System.out.println("Empty constructor called.");
     }
