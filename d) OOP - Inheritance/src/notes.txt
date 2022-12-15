@@ -246,6 +246,14 @@ while the object is being instantiated.
 
 
 
+Constructor overloading is declaring multiple constructors, with different formal parameters.
+
+The number of parameters can be different between constructors.
+
+Or if the number of parameters is the same between two constructors, their types or order of types must differ.
+
+
+
     
 
     
