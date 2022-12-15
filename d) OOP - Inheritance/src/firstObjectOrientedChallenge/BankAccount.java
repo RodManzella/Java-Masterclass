@@ -7,6 +7,24 @@ public class BankAccount {
     private String emailOfAccountHolder;
     private String phoneOfAccountHolder;
 
+    public BankAccount(){
+        System.out.println("Empty constructor called.");
+    }
+
+    
+
+    public BankAccount(String accountNumber, double accountBalance, String nameOfAccountHolder,
+            String emailOfAccountHolder, String phoneOfAccountHolder) {
+        System.out.println("Account constructor with parameters called.");
+        this.accountNumber = accountNumber;
+        this.accountBalance = accountBalance;
+        this.nameOfAccountHolder = nameOfAccountHolder;
+        this.emailOfAccountHolder = emailOfAccountHolder;
+        this.phoneOfAccountHolder = phoneOfAccountHolder;
+    }
+
+
+
     public String getAccountNumber() {
         return accountNumber;
     }

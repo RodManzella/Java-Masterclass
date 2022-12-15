@@ -234,6 +234,18 @@ The default constructor
 
 If a class contains no constructor declarations, then a default constructor is implictly declared.
 
+This constructor has no parameters, and is often called the no-args (no arguments) constructor.
+
+If a class contains any other constructor declarations, then a default constructor is NOT implicitly declared
+
+
+
+
+The purpose of the constructor is, to essentially initialize the object that we´re creating, and do whatever else we need to happen,
+while the object is being instantiated.
+
+
+
     
 
     
