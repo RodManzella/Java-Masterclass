@@ -23,7 +23,8 @@ public class BankAccount {
         // Constructor chaining is optional, meaning it´s not something you have to do, but there can be situations where you want to do this.
         //  Now one other thing to keep in mind is, using this, to call another constructor, is that you have to be sure that it´s the very
         // first line that is being executed. In other words, we couldn´t have a Sysout as the first line in the constructor, because we would
-        // get a compiler error
+        // get a compiler error. The call to this must be the fisrt statement in constructor´s body. So, the rules are pretty strict using the
+        // this statement with parameters, can only be called in a constructor, and it has to be the very first line that´s called
         System.out.println("Empty constructor called.");
     }
 
