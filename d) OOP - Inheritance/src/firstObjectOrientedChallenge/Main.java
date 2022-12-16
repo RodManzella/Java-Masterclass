@@ -3,8 +3,11 @@ package firstObjectOrientedChallenge;
 public class Main {
     public static void main(String[] args) {
         
-        BankAccount bobsAccount = new BankAccount("12345", 1000.00, "Bob Brown",
-         "myemail@bob.com","(087) 123-4567");
+        // BankAccount bobsAccount = new BankAccount("12345", 1000.00, "Bob Brown",
+        //  "myemail@bob.com","(087) 123-4567");
+
+        BankAccount bobsAccount = new BankAccount();
+
          //Just this statement does all the things below ^^^^
 
         // bobsAccount.setAccountNumber("12345");

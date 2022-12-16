@@ -40,6 +40,29 @@ public class BankAccount {
         this.phoneOfAccountHolder = phoneOfAccountHolder;
     }
 
+    
+
+
+
+    public BankAccount(String nameOfAccountHolder, String emailOfAccountHolder, String phoneOfAccountHolder) {
+        this("99999", 100.55, nameOfAccountHolder, emailOfAccountHolder, phoneOfAccountHolder);
+        // this.nameOfAccountHolder = nameOfAccountHolder;
+        // this.emailOfAccountHolder = emailOfAccountHolder;
+        // this.phoneOfAccountHolder = phoneOfAccountHolder;
+
+        //What we´ve done her eis, we´ve defaulted two parameters, the account number to be 99999, and the default balance to $100.55
+        // We´ve also gone back and called our major constructor using the keyword this. And the major constructor is the one that actually
+        // updates all the fields.
+
+        // You´ll find, as you start creating and writting more complex code, it´s not unusual to see multiple constructors like this.
+        // And in that situation, often you do all your initialization in the one constructor, like you can see here. All other constructors
+        // can call that major constructor, passing default values or null references as arguments.
+        // That´s a good way of doing things, and it often leads to really good coding, because you´re not having to duplicate code, or
+        // duplicating initialization in more than one place.
+
+         
+    }
+
 
 
     public String getAccountNumber() {
