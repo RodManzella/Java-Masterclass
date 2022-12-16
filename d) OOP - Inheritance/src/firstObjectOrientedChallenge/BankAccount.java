@@ -20,7 +20,10 @@ public class BankAccount {
         //What we´re doing here with the this, is a special use of this, which you won´t see used anywhere else.
         //This is calling another constructor within a constructor. So, what we´re saying ehre is, look, if you try and create an object
         // from this class, and you don´t give me any parameters, set this new object up with these values, by calling this other constructor.
-        // Constructor chaining is optional
+        // Constructor chaining is optional, meaning it´s not something you have to do, but there can be situations where you want to do this.
+        //  Now one other thing to keep in mind is, using this, to call another constructor, is that you have to be sure that it´s the very
+        // first line that is being executed. In other words, we couldn´t have a Sysout as the first line in the constructor, because we would
+        // get a compiler error
         System.out.println("Empty constructor called.");
     }
 
