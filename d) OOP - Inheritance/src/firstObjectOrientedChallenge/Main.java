@@ -21,6 +21,11 @@ public class Main {
         bobsAccount.withdrawal(100);
         bobsAccount.deposit(250);
         bobsAccount.withdrawal(50);
+
+        BankAccount timsAccount = new BankAccount("Tim", "tim@email.com",
+         "12345");
+
+         
     }
     
 }
