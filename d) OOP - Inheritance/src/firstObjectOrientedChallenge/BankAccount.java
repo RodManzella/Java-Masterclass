@@ -8,8 +8,19 @@ public class BankAccount {
     private String phoneOfAccountHolder;
 
     // From the constructor with no parameters, we´ll call the one with five parameters, and pass in literal values. So, to do that,
-    // we type, this, followed by parentheses
+    // we type, this, followed by parentheses. Which constructor is called is determined by the values we pass. So we´ll add a call
+    // to this in the no args constructor, and we´ll just pass some literals as arguments. The type and number of arguments we pass,
+    // must match one of our constructors. Since we only have one other declared, and it only has five parameters, we´ll pass five
+    // arguments. But the types must match the order of the types, that were declared in the constructor. So, all of our parameters
+    // in the second constructor are strings, except the second parameter, which we called balance, and that´s a double
     public BankAccount(){
+        this("56789", 2.50, "Default name", "Default address",
+        "Default phone");
+
+        //What we´re doing here with the this, is a special use of this, which you won´t see used anywhere else.
+        //This is calling another constructor within a constructor. So, what we´re saying ehre is, look, if you try and create an object
+        // from this class, and you don´t give me any parameters, set this new object up with these values, by calling this other constructor.
+        // Constructor chaining is optional
         System.out.println("Empty constructor called.");
     }
 
