@@ -264,6 +264,12 @@ You must use the special statement this() to execute another constructor, passin
 
 And this() must be the first executable statement, if it´s used from another constructor.
 
+==============================================================================================================================================
+
+Reference vs Object vs Instance vs Class
+
+
+
     
 
     
