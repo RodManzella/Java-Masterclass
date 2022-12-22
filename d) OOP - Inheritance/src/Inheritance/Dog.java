@@ -2,7 +2,9 @@ package Inheritance;
 
 public class Dog extends Animal {
     
-    
+    public Dog(){
+        super("Mutt", "Big", 50);
+    }
 }
 
 // Using extends specifies the superclass (or the parent class) of the class we´re declaring.

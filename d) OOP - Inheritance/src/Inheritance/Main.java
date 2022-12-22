@@ -5,6 +5,14 @@ public class Main {
 
         Animal animal = new Animal("Generic Animal", "Huge", 400);
         doAnimalStuff(animal, "Slow");
+
+        Dog dog = new Dog();
+        doAnimalStuff(dog, "fast");
+        
+        // We´re passing a dog object as the method argument, when the type was declared as an Animal.
+        // Why is this ok? It works because Dog inherits from Animal, it´s a type of animal, as we´ve said, and where that becomes really
+        // important, is in code like this.
+        // We can pass a dog instance to any method that takes an animal.
         
     }
 
