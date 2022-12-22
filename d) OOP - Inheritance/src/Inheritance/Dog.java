@@ -36,6 +36,25 @@ public class Dog extends Animal {
         System.out.println("Dogs walk, run and wag their tail");
     }
 
+    // the bark method will be private, because i´m gonna call it from the move method. This is a reminder that not all methods need to
+    // be exposed, especially if you only intend them to be called internally from the current class.
+
+    private void bark(){
+        System.out.println("Woof! ");
+    }
+
+    private void run(){
+        System.out.println("Dog running! ");
+    }
+
+    private void walk(){
+        System.out.println("Dog walking");
+    }
+
+    private void wagTail(){
+        System.out.println("Tail wagging");
+    }
+
     
 
     
