@@ -16,6 +16,10 @@ public class Main {
              },
               "05/11/1985",
                "Javs Masterclass");
+
+        System.out.println(s);
+        // Every object, when passed to System.out.println, will have the toString method implicitly executed, if you´ve created such a 
+        // method on your class.
         }
     }
     
