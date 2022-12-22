@@ -645,7 +645,15 @@ you in action, when we get to the database and I/O sections of this course.
 
 =================================================================================================================================================
 
+Inheritance
 
+  - What is inheritance, and why is it so powerful
+
+  - We can look at Inheritance as a form of code re-use.
+
+  - It´s a way to organize classes into a parent-child hierarchy, which lets the child inherit(re-use) fields and methods from its parent.
+
+  
 
 
 
