@@ -558,6 +558,33 @@ The POJO
                   Name
                   DateOfBirth
                   ClassList
+
+
+Annotation (@)
+
+  - Annotations are a type of metadata.
+
+  - Metadata is a way of formally describing additional information about our code.
+
+  - Annotations are more structured, and have more meaning than comments.
+
+  - This is because they can be used by the compiler, or other types of pre-processing functions, to get information about the code.
+
+  - Metadata doesn´t affect how your code runs, so this code will still run. with, or without the annotation.
+
+  - Override is one of the most common annotations in Java that you´ll use.
+
+  - It tells that compiler that this is a special type of method in Java, an overriden method.
+
+
+
+Overriden Method
+
+  - An overriden method is not the same as an overloaded method.
+
+  - An overriden method is a special method in Java, that other classes can implement, if they use a specified method signature.
+
+  - 
                   
 
 
