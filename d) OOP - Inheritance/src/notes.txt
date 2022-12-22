@@ -639,6 +639,12 @@ Pojo vs Record
   - But if you´re reading a lot of records from a database or file source, and simply passing this data around, then the record is a big
     improvement.
 
+We´ve only touched some of the features of the record to give you an introduction. When we do talk more about the final keyword, and
+immutability of data, especially as it may be affected by concurrent threads, we´ll be revisiting this type. We´ll also be showing it to
+you in action, when we get to the database and I/O sections of this course.
+
+
+
 
                   
 
