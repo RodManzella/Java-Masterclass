@@ -8,7 +8,7 @@ public class Animal {
 
 
     public Animal(){
-        
+
     }
     public Animal(String type, String size, double weight) {
         this.type = type;
@@ -27,7 +27,7 @@ public class Animal {
     }
 
     public void makeNoise(){
-        System.out.println(type + "makes some kind of noise");
+        System.out.println(type + " makes some kind of noise");
     }
 
     
