@@ -26,6 +26,16 @@ public class Dog extends Animal {
         return "Dog [earShape=" + earShape + ", tailShape=" + tailShape + "]" + super.toString();
     }
 
+    public void makeNoise(){
+        
+    }
+
+    @Override
+    public void move(String speed){
+        super.move(speed);
+        System.out.println("Dogs walk, run and wag their tail");
+    }
+
     
 
     

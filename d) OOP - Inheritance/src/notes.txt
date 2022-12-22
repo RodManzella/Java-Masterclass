@@ -681,6 +681,16 @@ Code Re-use
 
   - Or we can change that code for the subclass
 
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Overriding a method
+
+  - Overriding a method is when you create a method on a subclass, which has the same signature as a method on a super class.
+
+  - Remember that a method signature consists of the method name, and the number and types of parameters.
+
+  - You override a parent class method, when you want the child class to show different behavior for that method.
+
 
 
 
