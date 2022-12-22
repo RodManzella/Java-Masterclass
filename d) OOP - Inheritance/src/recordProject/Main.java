@@ -1,5 +1,7 @@
 package recordProject;
 
+import javax.sound.sampled.SourceDataLine;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -21,6 +23,16 @@ public class Main {
         // Every object, when passed to System.out.println, will have the toString method implicitly executed, if you´ve created such a 
         // method on your class.
         }
+        
+        Student pojoStudent = new Student("S923006", "ann", "05/11/1985", "Java Masterclass");
+        LPAStudent recordStudent = new LPAStudent("S923007", "Bill", "05/11/1985", "Java MasterClass");
+
+        System.out.println(pojoStudent);
+        System.out.println(recordStudent);
     }
+    
+
+
+
     
 }
