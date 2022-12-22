@@ -30,8 +30,15 @@ public class Main {
         System.out.println(pojoStudent);
         System.out.println(recordStudent);
 
-        System.out.println(pojoStudent.getName() + " is taking "+ pojoStudent.getClassList());
+
+        pojoStudent.setClassList(pojoStudent.getClassList() + ", Java OCP Exam 829");
+        // recordStudent.setClassList(recordStudent.classList() + ", Java OCP Exam 829");
         
+        // There is no way to set the class list, other than by passing the value in on the record header, or through the use of constructors.
+        // This is because a record´s goal is to be immutable.
+
+
+        System.out.println(pojoStudent.getName() + " is taking "+ pojoStudent.getClassList());
         System.out.println(recordStudent.name() + " is taking "+ recordStudent.classList());  // acessor methods(getters) get accesed differently in records
     }
     

@@ -623,7 +623,21 @@ The Record type
 
   - Best of all, you the developer, don´t have to write or generate any of this code.
 
-  
+  - Why is the record built to be immutable?
+
+      The are more use cases for immutable data transfer objects, and keeping them well encapsulated.
+
+      You want to protect the data from unintended mutations.
+
+
+Pojo vs Record
+
+  - If you want to modify data on your class, you won´t be using the record.
+
+  - you can use the code generation options for the POJO, as we showed in the earlier video.
+
+  - But if you´re reading a lot of records from a database or file source, and simply passing this data around, then the record is a big
+    improvement.
 
 
                   
