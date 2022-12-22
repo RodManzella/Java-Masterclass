@@ -27,13 +27,23 @@ public class Dog extends Animal {
     }
 
     public void makeNoise(){
-        
+        bark();
+        System.out.println();
     }
 
     @Override
     public void move(String speed){
         super.move(speed);
         System.out.println("Dogs walk, run and wag their tail");
+
+        if(speed == "slow"){
+            walk();
+            wagTail();
+        }else{
+            run();
+            bark();
+        }
+        System.out.println();
     }
 
     // the bark method will be private, because i´m gonna call it from the move method. This is a reminder that not all methods need to
