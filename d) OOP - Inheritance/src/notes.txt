@@ -584,7 +584,48 @@ Overriden Method
 
   - An overriden method is a special method in Java, that other classes can implement, if they use a specified method signature.
 
-  - 
+===============================================================================================================================================
+
+The POJO vs The Record
+
+  - In the last video, we talked about the Plain Old Java Object, and we showed you how it comes with a lot of what we call boilerplate code.
+
+  - It´s code that´s repetitive, and follows certain rules.
+
+  - In our case, we had a constructor with parameters for every field on our class, as well as getters and setters for each field. We also
+    set up a toString method on this class, so we could print out all the fields on our class in a nicely formatted way.
+
+  - This is code that´s repeated over and over, for every POJO, or for every JavaBean, if you are using JavaBeans to leverage Java frameworks
+    that use them.
+
+  - Once created, this code is rarely looked at, or modified.
+
+  - In fact, there are tools that´ll just regenerate all of this code, if your underlying data, or domain model changes.
+
+  - Even better though, Java introduced a new type, the record, which became part of the official language, in JFK 16.
+  
+
+The Record type
+
+  - The record was introduced in JDK 14, and became officialy part of Java in JDK 16.
+
+  - It´s purpose is to replace the boilerplate code of the POJO, but to be more restrictive.
+
+  - Java calls them "plain data carriers".
+
+  - The word carrier is an important term, because it means the record has more rules built-in then a POJO would.
+
+  - The record is a special class that contains data, that´s not meant to be altered.
+
+  - In other words, it seeks to achieve immutability, for the data in its members.
+
+  - It contains only the most fundamental methods, such as constructors and accessors.
+
+  - Best of all, you the developer, don´t have to write or generate any of this code.
+
+  
+
+
                   
 
 
