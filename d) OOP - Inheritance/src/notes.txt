@@ -381,8 +381,44 @@ Static variables
 
       Instance variables
 
+       - They don´t use the static keyword.
 
+       - They´re also known as fields, or member variables.
 
+       - Instance variables belong to a specific instance of a class.
+
+       - Each instance has its own copy of an instance variable.
+
+       - Every instance can have a different value.
+
+       - Instance variables represent the state of a specific instance of a class.
+
+       - Let´s see an example:
+         
+         
+         class Dog{
+
+            private String name;
+            
+            public Dog(String name){
+               this.name = name;
+            }
+
+            public void printName(){
+               System.out.println("name = " +name);
+            }
+         }
+
+         public class Main{
+
+            public static void main(String []args){
+
+                Dog rex = new Dog("Rex");               // create instance (rex)
+                Dog fluffluy = new Dog("Fluffy");       // create instance (fluffy)
+                rex.printName();                        // prints Rex
+                fluffly.printName();                    // prints Fluffy
+            }
+         }
 
 
 
