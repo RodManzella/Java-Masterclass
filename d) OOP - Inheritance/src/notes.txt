@@ -671,7 +671,15 @@ super()
    arguments to that constructor.
 
 ===============================================================================================================================================
+Code Re-use
 
+  - All subclasses can execute methods, even though the code is declared on the parent class.
+
+  - The code doesn´t have to be duplicated in each subclass.
+
+  - We can use code from the parent
+
+  - Or we can change that code for the subclass
 
 
 
