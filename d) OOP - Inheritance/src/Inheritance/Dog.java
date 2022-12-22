@@ -40,6 +40,12 @@ public class Dog extends Animal {
         // What this modifier says is, let any class that is a subclass acess this field. This is conditional encapsulation.
         // We´re allowing some limited acess to our internal fields, and that´s to subclasses.
         // Protected acess also means that any classes in the same package, will also have acess.
+        // Notice here that we simply just reference type here. We didn´t add any other qualifier, not this, or super, and we didn´t have
+        // to call type from a different instance of Dog.
+        // This is another advantage of Inheritance, for fields and methods that aren´t private.
+        // They can be acessed directly, as if they really were declared on the subclass itself.
+        // java first looks on the subclass for a method or field with that name, then it´ll go up the inheritance tree, looking for a match.
+        // Let´s quickly test this, by creating a wolf in the main Method of the Main class.
         
         System.out.println();
     }
