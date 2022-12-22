@@ -465,6 +465,49 @@ Static Methods
           }
       }
 
+    - Static methods are called as ClassName.methodName(); or methodName(); only if in the same class
+
+
+Instance methods
+
+  - Instancce methods belong to an instance, of a class.
+
+  - To use an instance method, we have to instantiate the class first, usually by using the new keyword.
+
+  - Instance methods can acess instance variables directly.
+
+  - Instance methods can also acess static methods and static variables directly.
+
+  - What i mean by directly is that we don´t usually have to use the keyword this, with the dot notation to use them. And we don´t have
+    to use the Class name with the dot notation to acess static variables, though that can help with clarity.
+
+  - Instance Method example:
+
+      class Dog{
+
+          public void bark(){
+              System.out.println("woof");
+          }
+
+          public class Main{
+
+              Dog rex = new Dog();               // create instance
+              rex.bark();                        // call instance method
+          }
+      }
+
+    - So, the hard part here could be deciding when to create an instance, or when to create a static method. So, let´s see some basic rules
+      that could help you decide.
+
+
+          1) Shoud a method be static?
+
+          2) Does it use any fields (instance variables) or instance methods?
+
+          3) Yes: It should probably be an instance method.
+
+          4) No: It should probably be an static method.
+
     
 
     
