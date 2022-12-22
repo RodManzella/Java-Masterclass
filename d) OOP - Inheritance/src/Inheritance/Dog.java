@@ -27,7 +27,20 @@ public class Dog extends Animal {
     }
 
     public void makeNoise(){
-        bark();
+        if(type == "Wolf"){
+            System.out.println("Aw wooo!");
+        }else{
+            bark();
+        }
+
+        // In this case, where we´re referencing type, we get a compiler error. This is because type has private acess in Animal.
+        // But type is one of the fields Inherited by Dog.
+        // Yes, but because type is private on Animal, no other classes, not even subclasses, can acess or use this field in its own methods.
+        // We´ve said there´s a modifier that allows acess for subclasses, and that´s the protected modifier.
+        // What this modifier says is, let any class that is a subclass acess this field. This is conditional encapsulation.
+        // We´re allowing some limited acess to our internal fields, and that´s to subclasses.
+        // Protected acess also means that any classes in the same package, will also have acess.
+        
         System.out.println();
     }
 
