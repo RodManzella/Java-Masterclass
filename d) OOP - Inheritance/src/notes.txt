@@ -863,13 +863,67 @@ Constructors Bad example:
 
       public Rectangle(int width, int height){
           this.x = 0;
-          this. y = 0
+          this.y = 0
           this.width = width;
           this.height = height;
       }
 
-
+      public Rectangle(int x, int y, int width, int height){
+          this.x = x;
+          this.y = y;
+          this.width = width;
+          this.height = height;
+      }
   }
+
+  Here, we have three constructors.
+
+  All three constructors initializa variables.
+
+  There´s repeated code in each constructor.
+
+  We´re initializing values in each constructor, with some default values.
+
+  You should NEVER write constructors like this.
+
+  Let´s look at the right way to do this, by using a this() call.
+  ---------------------------------------------------------------------------------------------------------------------------------------------
+Constructors Good Example:
+
+
+  class Rectangle{
+
+      private int x;
+      private int y;
+      private int width;
+      private int height;
+
+      // 1st constructor
+      public rectangle(){
+          this(0,0);          // calls 2nd constructor
+      }
+
+      // 2nd constructor
+      public Rectangle(int width, int height){
+          this(0, 0, width, height);             // calls 3rd constructor
+      }
+
+      // 3rd constructor
+      public Rectangle(int x, int y, int width, int height){
+          // initialize variables
+          this.x = x;
+          this.y = y;
+          this.width = width;
+          this.height = height;
+      }
+  }
+
+In this example, we still have three constructors.
+
+The 1st constructor calls the 2nd constructor, the 2nd constructor calls the 3rd constructor, and the 3rd constructor initializes the
+instance variables.
+
+
 
 
 
