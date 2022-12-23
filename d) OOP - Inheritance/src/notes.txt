@@ -928,7 +928,49 @@ The 3rd constructor does all the work.
 No matter what constructor we call, the variables will always be initialized in the 3rd constructor.
 
 This is known as constructor chaining, the last constructor has the responsibility to initialize the variables.
+------------------------------------------------------------------------------------------------------------------------------------------------
 
+super() call example:
+
+  class Shape{
+
+      private int x;
+      private int y;
+
+      public Shape(int x, int y){
+          this.x = x;
+          this.y = y;
+      }
+   }
+
+
+   class Rectangle extends Shape{
+
+      private int width;
+      private int height;
+
+      // 1st constructor
+      public Rectangle(int x, int y){
+          this(x, y, 0, 0);                // calls 2nd constructor
+      }
+
+
+      public Rectangle(int x, int y, int widht, int height){
+          super(x, y);                                              // calls the constructor from parent class(Shape)
+          this.width = with;
+          this.height = height
+      }
+   }
+
+In this example, we have a class Shape with x and y variables, and a class Rectangle that extends Shape, with variables width and height.
+
+In the Rectangle class, the 1st constructor is calling the 2nd constructor.
+
+The 2nd constructor calls the parent constructor, with parameters x and y.
+
+The parent constructor will initialize the x and y variables, while the 2nd Rectangle constructor will initialize the width and height variables.
+
+Here, we have both the super() and this() calls.
 
 
 
@@ -936,6 +978,7 @@ This is known as constructor chaining, the last constructor has the responsibili
 
 
                   
+
 
 
 
