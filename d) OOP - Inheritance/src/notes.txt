@@ -715,6 +715,38 @@ Polymorphism
 ============================================================================================================================================== 
 
 
+Inheritance looks kind of interesting, but when would we really use it?
+
+Well, it turns iut, In Java, we´ve been using inheritance all along.
+
+
+java.lang.Object
+
+  - This is because every class you create in Java, intrinsically extends a special Java class.
+
+  - This class is named Object, and it´s in the java.lang package.
+
+  - Ok, that´s confusing, a class called Object?
+
+  - Let´s see what Java has to say about this class.
+
+  - We´ll use the link to Java´s application Programming Interface (API) for this class, which you can find in the resources section of
+    this video.]
+
+    
+
+Class Object
+
+  - Class Object is the root of the class hierarchy. Every class has Object as a superclass. All objects, including arrays, implement the
+    methods of this class.
+
+    - Wheteher you knew it or not, your classes were extending this class, Object.
+
+    - All of your classes have functionality built in that you can use or override, the minute you create them.
+
+    - Let´s explore the methods on java.lang.Object
+
+    
 
 
 
