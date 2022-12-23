@@ -1165,6 +1165,10 @@ Covariant Return type
           // Notice how we made the acess modifier public on the method in Person, though Object declared it as protected.
           // It´s valid to go in this direction, meaning allowing the overriding method to have more acess, or be less restrictive.
 
+===============================================================================================================================================
+
+What´s a text block?
+
 
 
 
