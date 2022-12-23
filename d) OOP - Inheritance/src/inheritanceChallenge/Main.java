@@ -10,5 +10,9 @@ public class Main {
 
         Employee joe = new Employee("Joe", "11/11/1990", "03/03/2020");
         System.out.println(joe);
+        // Notice that now the employee Id for Joe is 2. That´s because employee number, that static field now has the number
+        // of the next employee´s employee number.
+        // Remember, a static field is a place that lets you share data, among all your instances. When you´re generating an id for a new employee,
+        // it´s a place to find the next Id to use.
     }
 }
