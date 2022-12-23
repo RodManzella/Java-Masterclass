@@ -747,8 +747,51 @@ Class Object
     - Let´s explore the methods on java.lang.Object
 
 =================================================================================================================================================
+this vs super
 
-    
+Let´s discuss the difference between this, and the super keywords.
+
+We´ll also find out about the differences between the this(), and super(), method calls.
+
+
+Let´s start with the super, and the this keywords first.
+
+  - The keyword super is used to acess or call the parent class members(variables and methods)
+
+  - The keyword this is used to call the current class members (variables and methods)
+
+  - this is required when we have a parameter with the same name, as an intance variable, or field.
+
+  - NOTE: We can use either of them anywhere in a class, except for static elements, like a static method. Any attempt to do so there, will
+          lead to compile time errors.
+
+  - The keyword this, is commonly used with constructors, setters and optionally used in getters.
+
+  - In thhis example, we´re using the this keyword int the constructor and setter, since there´s a parameter with the same name, as the
+    instance or field.
+
+  - In the getter, we don´t have any parameters, so there´s no conflict, so therefore the this keyword is optional there.
+
+
+      public class House{
+          
+          private String color;
+
+          public House(String color){
+              // this keyword is required, same parameter name as field.
+              this.color = color;
+          }
+
+          public String getColor(){
+              // this is optional
+              return color;        // same as return this.color;
+          }
+
+          public void setColor(String color){
+              // this keyword is required, same parameter name as field.
+              this.color = color;
+          }
+      }
 
 
 
