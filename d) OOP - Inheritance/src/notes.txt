@@ -699,6 +699,20 @@ Overriding a method
 
     Or the method can call the parent class´s method, and include other code to run, so it can extend the funcionality for the Dog, for that
     behavior.
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Polymorphism
+
+  - Polymorphism simply means 'many forms'.
+  
+  - In this video, we showed that Animal can take multiple forms, the base classe Animal, or a dog, or a Fish. And as you´ve seen, some
+    advantages of Polymorphism are: It makes code simpler. We can write code once, using the base class, or super class, as we did with our
+    doAnimalStuff method. We wrote that code without ever having to know about subclasses types. We didn´t have to write code to check the types
+    of object, and then decide what method to call, Java did that at runtime.
+
+  - It encourages code extensibility. It´s very easy to subclass, and override or extend the method, that´ll be called as we demonstrated.
+
+============================================================================================================================================== 
 
 
 
