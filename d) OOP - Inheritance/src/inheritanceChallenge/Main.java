@@ -18,5 +18,10 @@ public class Main {
         // of the next employee´s employee number.
         // Remember, a static field is a place that lets you share data, among all your instances. When you´re generating an id for a new employee,
         // it´s a place to find the next Id to use.
+
+        HourlyEmployee mary = new HourlyEmployee("Mary", "05/05/1970", "03/03/2021", 15);
+        System.out.println(mary);
+        System.out.println("Mary´s paycheck = $"+mary.collectPay());
+        System.out.println("Mary´s Holiday Pay = $"+ mary.getDoublePay());
     }
 }
