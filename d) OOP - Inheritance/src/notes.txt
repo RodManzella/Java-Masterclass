@@ -1023,7 +1023,37 @@ Method Overloading Rules
     - They may or may not throw different checked or unchecked exceptions.
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
-Me
+Method Overriding
+
+Method overriding means defining a method in a child class, that already exits in the parent class, with the same 
+signature(the same name, same arguments).
+
+By extending the parent class, the child class gets all the methods defined in the parent class(those methods are aka derived methods).
+
+Method overriding is also known as Runtime Polymorphism, or Dynamic Method Dyspatch, because the method that is going to be called, is decided
+at runtime, by the Java Virtual Machine.
+
+
+  - When we override a method, it´s recommended to put @Override, immediately above the method definition.
+
+  - The @Override statement is not required, but it´s a way to get the compiler to flag an error, if you don´t actually properly override
+    this method.
+
+  - We´ll get an error, if we don´t follow the overriding rules correctly:
+      
+        We can´t override static methods, only instance methods can be overriden.
+
+  - A method will be considered overriden, if we follow these rules:
+
+        It must have the same name and same arguments.
+
+        The return type can be a subclass of the return type in the parent class.
+
+        It can´t have a lower acess modifier. In other words, it can´t have more restrictive acess privileges.
+
+        For example, if the parent´s method is protected, then using private in the child´s overriden method is not allowed.
+        However, using public for the child´s method would be allowed, in this example.
+
 
 
 
