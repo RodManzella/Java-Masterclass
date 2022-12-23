@@ -923,6 +923,12 @@ In this example, we still have three constructors.
 The 1st constructor calls the 2nd constructor, the 2nd constructor calls the 3rd constructor, and the 3rd constructor initializes the
 instance variables.
 
+The 3rd constructor does all the work.
+
+No matter what constructor we call, the variables will always be initialized in the 3rd constructor.
+
+This is known as constructor chaining, the last constructor has the responsibility to initialize the variables.
+
 
 
 
