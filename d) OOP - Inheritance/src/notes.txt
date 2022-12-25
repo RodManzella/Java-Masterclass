@@ -1169,6 +1169,8 @@ Covariant Return type
 
 What´s a text block?
 
+A text block is just a special format for multi-line String literals.
+
 
 
 
