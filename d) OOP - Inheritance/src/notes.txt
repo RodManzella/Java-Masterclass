@@ -1242,6 +1242,10 @@ String Comparison Methods:
 
     - repeat: returns the String repeated by the number of times specified in the argument.
 
+    - replace/ replaceAll/ replaceFirst: These methods replace characters or strings in the string, returning a new String with replacements.
+
+    - substring/ subSequence: These return a part of the String, its range defined by the start and end index specified.
+
 
 
 
