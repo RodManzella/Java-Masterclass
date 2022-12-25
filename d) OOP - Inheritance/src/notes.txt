@@ -1167,13 +1167,40 @@ Covariant Return type
 
 ===============================================================================================================================================
 
-What´s a text block?
+The String
 
-A text block is just a special format for multi-line String literals.
+The String has over 60 methods available.
 
-It´s simply a String, with a new representation i the source code.
+The String is a sequence of characters, meaning its characters are ordered and indexed.
 
-It ebcame part of the official language as of JDK 15.
+The index starts at 0, and not 1.
+
+
+
+The purpose of String methods:
+
+We can split String methods up into three basic categories:
+
+  - String Inspections Methods: these provide some information about the String, with methods like length(), isEmpty(), and isBlank()
+
+  - Methods for comparing String values.
+
+  - String manipulation methods.
+
+
+
+Let´s start with some String inspection methods:
+
+  - length: Returns the number of characters in the String.
+
+  - charAt: Returns the character at the index that´s passed.
+
+  - indexOf/lastIndexOf: Returns an integer, representing the index in the sequence where the String or character passed, can be located
+    in the String.
+
+  - isEmpty: Returns true if length is zero.
+
+  - isBlank: Returns true if length is zero OR the string only contains whitespace characters, added in JDK 11.
 
 
 
