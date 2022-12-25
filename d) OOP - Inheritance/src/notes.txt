@@ -1171,6 +1171,10 @@ What´s a text block?
 
 A text block is just a special format for multi-line String literals.
 
+It´s simply a String, with a new representation i the source code.
+
+It ebcame part of the official language as of JDK 15.
+
 
 
 
