@@ -31,7 +31,35 @@ public class Main {
 
         //---------------------------------String comparison Methods----------------------------------------------------------------------
 
-        
+        String HelloWorldLower = helloWorld.toLowerCase();
+
+        if(helloWorld.equals(HelloWorldLower)){
+            System.out.println("Values match exactly");
+        }
+
+        if(helloWorld.equalsIgnoreCase(HelloWorldLower)){
+            System.out.println("Values match ignoring case");
+        }
+
+        if(helloWorld.startsWith("Hello")){
+            System.out.println("String starts with Hello");
+        }
+        if(helloWorld.endsWith("World")){
+            System.out.println("String ends with world");
+        }
+        if(helloWorld.contains("World")){
+            System.out.println("String contains world");
+        }
+
+        if(helloWorld.contentEquals("Hello World")){
+            System.out.println("Values match exactly");
+        }
+
+        // You might be wondering why Java has both the equals method, and the contentEquals method. The contentEquals method isn´t limited
+        // to just comparing String objects. It can be used to compare a StringBuilder´s value, which the equals method doesn´t support.
+
+    //-----------------------------------String Comparison Methods-----------------------------------------------------------------------------
+
 
 
     }
