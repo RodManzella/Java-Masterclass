@@ -1189,7 +1189,7 @@ We can split String methods up into three basic categories:
 
 
 
-Let´s start with some String inspection methods:
+String inspection methods:
 
   - length: Returns the number of characters in the String.
 
@@ -1201,6 +1201,24 @@ Let´s start with some String inspection methods:
   - isEmpty: Returns true if length is zero.
 
   - isBlank: Returns true if length is zero OR the string only contains whitespace characters, added in JDK 11.
+
+
+
+String Comparison Methods:
+
+  - contentEquals: Returns a boolean if the String´s value is equal to the value of the argument passed. This method allows for arguments
+    other than String, for any type that is a character sequence.
+
+  - equals: Return a boolean if the String´s value is equal of the argument passed.
+
+  - equalsIgnoreCase: Return a boolean if the String´s value is equal (ignoring case), to the value of the argument passed.
+
+  - contains: Returns a boolean if the String contains the argument passed.
+
+  - endsWith/startsWith : These return a boolean, and are much like the contains method, but more specific to the placement of the argument
+    in the String.
+
+  - regionMtches: Returns a boolean, if defined sub-regions are matched.
 
 
 
