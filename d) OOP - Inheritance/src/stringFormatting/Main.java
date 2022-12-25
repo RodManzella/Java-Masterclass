@@ -38,6 +38,21 @@ public class Main{
             System.out.printf("Printing %6d %n", i);
         }
 
+        // The String class itself has two methods, to support this type of formatting as well. One is a static method called format
+
+        String formattedString = String.format("Your age is %d", age);
+        //Here, we,re creating a String variable, and assigning it the output of the call to String.format, a static method.
+        // Like System.out.printf, this method has a String as its first argument, followed by arguments that match the specifiers
+        // in the String.
+        System.out.println(formattedString);
+
+
+        formattedString = "Your age is %d". formatted(age);
+        System.out.println(formattedString);
+
+        //When you use this method, you just pass the arguments that match the specifiers in the current String, and the result is a formatted
+        // String.
+
     }
 
     //         \t        insert a tab character.
