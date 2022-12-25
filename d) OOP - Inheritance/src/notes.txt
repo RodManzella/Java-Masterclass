@@ -1218,7 +1218,29 @@ String Comparison Methods:
   - endsWith/startsWith : These return a boolean, and are much like the contains method, but more specific to the placement of the argument
     in the String.
 
-  - regionMtches: Returns a boolean, if defined sub-regions are matched.
+  - regionMatches: Returns a boolean, if defined sub-regions are matched.
+
+
+  String Manipulation Methods:
+
+  The first set of methods, don´t actually change the underlying meaning of the text value, but perfom some kind of clean up
+
+    - indent: This method was added in JDK 15, and adds or removes spaces from the beginning of lines in multi-line text.
+
+    - strip/stripLeading/stripTrailing/trim: The difference between the strip method and trim method is that the strip() supports a larger
+      set of white space characters. It and the corresponding stripLeading and stripTrailing methods were added in JDK 11.
+
+    - toLowerCase/toUpperCase: Returns a new String, either in lower case or in upper case.
+
+
+  The second set of string manipulation methods transform the String value, and return a String with a different meaning than the original
+  String.
+
+    - concat: Similar to the plus operator for strings, it concatenates text to the String and returns a new value as the result.
+
+    - join: Allows multiple strings to be concatenated together in a single method, specifying a delimiter.
+
+    - repeat: returns the String repeated by the number of times specified in the argument.
 
 
 
