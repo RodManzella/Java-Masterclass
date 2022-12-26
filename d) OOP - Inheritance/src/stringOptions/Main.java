@@ -69,6 +69,29 @@ public class Main {
         // additional allocation. Every time a StringBuilder needs to increase capacity, the data stored in the original storage, needs to get
         // copied over to the larger storage area. Let´s see this in action.
         // Let´s append some text to our two empty StringBuilder objects.
+
+        StringBuilder builderPlus = new StringBuilder("Hello" + "World");
+        builderPlus.append(" and Goodbye");
+        builderPlus.deleteCharAt(15).insert(15, 'g');
+        System.out.println(builderPlus);
+        // We´re chaining methods here again, this time with the StringBuilder object. And the output shows that it looks like
+        // we´ve just replaced a big G, with a little G. But we did it by, first using the deleteCharAt method, and then the insert method.
+        //The StringBuilder class does also have a replace method, which requires a start and end index, to identify what will be replaced,
+        // which is different than the replace method for String.
+
+        builderPlus.replace(15, 16, "g");
+        System.out.println(builderPlus);
+
+        builderPlus.reverse().setLength(7);
+        System.out.println(builderPlus);
+
+        // the reverse method will reverse all the characters, and then call the setLength method, with the number 7, meaning were truncating
+        // the StringBuilder text value, to 7 characters.
+
+
+
+
+
     }
 
     public static void printInformation(String string){
