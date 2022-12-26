@@ -1299,7 +1299,17 @@ String methods vs StringBuilder methods
 
   - StringBuilder methods return this self-reference, to support chaining methods together.
 
-  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Some methods unique to the StringBuilder class.
+
+  - delete / deleteCharAt: You can delete a substring using indices to specify a range, or delete a single character at an index.
+
+  - insert: You can insert text at a specified position.
+
+  - reverse: You can reverse the order of the characters in the sequence.
+
+  - setlength: setLength can be used to truncate the sequence, or include null sequences to fill out the sequence to that length.
   
 
 
