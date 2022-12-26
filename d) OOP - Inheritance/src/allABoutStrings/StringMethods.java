@@ -55,6 +55,15 @@ public class StringMethods {
         //instance. But if you want to replace all ocurrences of one String with another, use the replace method, rather than the replaceAll
         //method.
 
+        System.out.println("ABC\n".repeat(3));
+        System.out.println("-".repeat(20));
+
+        System.out.println("ABC\n".repeat(3).indent(8));
+        System.out.println("-".repeat(20));
+
+        System.out.println("    ABC\n".repeat(3).indent(-2));
+        System.out.println("-".repeat(20));
+
         
 
 
