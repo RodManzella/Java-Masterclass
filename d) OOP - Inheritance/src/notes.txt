@@ -1247,6 +1247,45 @@ String Comparison Methods:
     - substring/ subSequence: These return a part of the String, its range defined by the start and end index specified.
 
 
+=====================================================================================================================================================
+
+String vs StringBuilder
+
+Because String is immutable, each method call returns a new instance of a String.
+
+As an alternative, Java provides a mutable text that lets us change its text value.
+
+This is the StringBuilder class.
+
+
+We´ve already talked about creating Strings, and the preferred way, the most efficient way, is to simply assign a literal, or concatenated
+literals to a variable.
+
+Instantiating String Objects:
+
+  - String hello = "Hello;
+  
+  - String helloWorld = "Hello" + "World"
+
+  - String badHello = new String("Hello");     // valid code but redundant.
+
+
+
+Let´s compare that to the StringBuilder, which has four overloaded constructors.
+
+  - StringBuilder helloBuilder = new StringBuilder ("hello");
+  - StringBuilder emptyBuilder = new StringBuilder();
+  - StringBuilder emptyBuilder5 = new StringBuilder(5);
+  - StringBuilder stringBuilder =  new StringBuilder(helloBuilder)
+
+
+There are four ways to create a new StringBuilder object, using the new keyword:
+
+  - Pass a String.
+  - Pass no arguments at all.
+  - Pass an Integer value.
+  - Pass some other type of character sequence(like StringBuilder).
+  
 
 
 
