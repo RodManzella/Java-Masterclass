@@ -18,3 +18,7 @@ Next, let´s see how we´de use composition to create a personal computer.
     - So, that´s what composition is, it´s actually modelling parts, and those parts make up a greater whole.
 
     - In this case, we´re gonna model the personal computer.
+
+    - And we´re modelling the has a relationshio, with the motherboard, the case, and the monitor.
+
+    
