@@ -9,6 +9,7 @@ public class Main extends Object {
 
         PrimarySchoolStudent jimmy = new PrimarySchoolStudent("Jimmy", 8, "Carole");
         System.out.println("Jimmy");
+        System.out.println(jimmy);
         
     }
    
