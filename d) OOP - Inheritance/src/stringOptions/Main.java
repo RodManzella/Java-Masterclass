@@ -37,6 +37,18 @@ public class Main {
         // After the call to the append method, we still only have one StringBuilder object. The variable helloWorldBuilder is still referencing
         // the same object, but the valye of that object changed. This is important, because it means the character sequence in the StringBuilder
         //changed. And this time, we didn´t have to assign the result to another variable to acess the result.
+
+
+        // Now, we´ll create two more StringBuilder instances. This time, we´ll make them both start with empty character sequences.
+
+        StringBuilder emptyStart =  new StringBuilder();
+        StringBuilder emptyStart32 = new StringBuilder(32);
+
+        printInformation(emptyStart);
+        printInformation(emptyStart32);
+
+        // A stringBuilder is mutable, meaning it can shrinkn or grow, in size. By default, an empty StringBuilder starts with a capacity
+        // of 16, meaning it can contain up to 16 characters, before it needs to request more memory.
     }
 
     public static void printInformation(String string){
@@ -49,6 +61,7 @@ public class Main {
 
         System.out.println("String = "+ builder);
         System.out.println("length = "+builder.length());
+        System.out.println("capacity = " +builder.capacity());
     }
     
 }
