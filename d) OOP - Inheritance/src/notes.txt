@@ -1287,6 +1287,19 @@ There are four ways to create a new StringBuilder object, using the new keyword:
   - Pass some other type of character sequence(like StringBuilder).
 
 --------------------------------------------------------------------------------------------------------------------------------------------
+
+String methods vs StringBuilder methods
+
+  - String methods create a new object in memory, and return a reference to this new Object.
+
+  - StringBuilder methods return a StringBuilder reference, but it´s really a self-reference.
+
+  - Unlike Strings, we can call methods on StringBuilder, without the need to assign the results to intermediate variables, as we saw with
+    Strings.
+
+  - StringBuilder methods return this self-reference, to support chaining methods together.
+
+  
   
 
 
