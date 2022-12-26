@@ -1,0 +1,20 @@
+Inheritance vs Composition
+
+    - Inheritance defines an IS A relationship
+    
+    - Composition defines a HAS A relationship.
+
+
+Next, let´s see how we´de use composition to create a personal computer.
+
+    - PersonalComputer inherits from Product.
+
+    - But a PersonalComputer, in addition to being a product, is actually made up of other parts.
+
+    - The computer has a motherboard, a case, and a monitor.
+
+    - The motherboard, the computer case, and the monitor aren´t computers, not in the same sense that they´re products.
+
+    - So, that´s what composition is, it´s actually modelling parts, and those parts make up a greater whole.
+
+    - In this case, we´re gonna model the personal computer.
