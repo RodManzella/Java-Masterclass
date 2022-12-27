@@ -83,6 +83,27 @@ Why is Inheritance less flexible?
 
 ===============================================================================================================================================
 
+In Java, encapsulation means hiding things, by making them private or inacessible.
+
+Why would we want to hide things in Java?
+
+    - To make the interface simpler, we may want to hide unecessary details.
+
+    - To protect the integrity of data on an object, we may hide or restrict acess to some of the data and operations.
+
+    - To decouple the published interface from the internal details of the class, we may hide actual names and types of class members.
+
+
+What do we mean by interface here?
+
+Although Jav has a type called interface, that´s not what we´re talking about here.
+
+When we talk about a class´s public or published interface, we´re really talking about the class members that are exposed to, or can be acessed by
+the calling code.
+
+Everything in the class is internal, or private to it.
+
+An application programming interface, or API, is the public contract, that tells others how to use the class.
 
 
 
