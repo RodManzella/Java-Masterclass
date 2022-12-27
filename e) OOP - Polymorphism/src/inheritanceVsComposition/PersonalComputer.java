@@ -23,6 +23,12 @@ public class PersonalComputer extends Product {
         drawLogo();
     }
 
+    public Motherboard getMotherboard() {
+        return motherboard;
+    }
+
+
+
     // public ComputerCase getComputerCase() {
     //     return computerCase;
     // }
@@ -34,6 +40,8 @@ public class PersonalComputer extends Product {
     // public Motherboard getMotherboard() {
     //     return motherboard;
     // }
+
+    
 
     
 
