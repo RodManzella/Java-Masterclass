@@ -9,14 +9,18 @@ public class Main {
         // by Java. In other words, we don´t now have a constructor to pass player data when we create a new player. This means the calling
         // code needs to manually set the data in these fields.
 
-        player.name = "Tim";
-        player.health = 20;
-        player.weapon = "Sword";
+        // player.name = "Tim";
+        // player.health = 20;
+        // player.weapon = "Sword";
 
-        int damage = 10;
-        player.loseHealth(damage);
-        System.out.println("Remaining health = "+ player.healRemaining());
-        player.health = 200;
+        // int damage = 10;
+        // player.loseHealth(damage);
+        // System.out.println("Remaining health = "+ player.healRemaining());
+        // player.health = 200;
+
+        // player.loseHealth(11);
+        // System.out.println("Remaining health = "+ player.healRemaining());
+
         // This code actually takes control away from the Player class, for managing the Player´s health. It didnpt call the restoreHealth 
         // method, which has the additional control in place, that player can never exceed 100.
 
@@ -42,8 +46,9 @@ public class Main {
 
         // We want the ability to ensure certain conditions are met before playing, and that acess to the player data during the game, is controlled
         // and protected.
-        player.loseHealth(11);
-        System.out.println("Remaining health = "+ player.healRemaining());
+
+            
+        
     }
     
 }
