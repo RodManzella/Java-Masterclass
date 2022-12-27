@@ -119,6 +119,37 @@ To create an encapsulated class, you want to:
 
     - Use acess modifiers that aren´t private, only for the methods that the calling code needs to use.
 
+==========================================================================================================================================
+
+Polymorphism
+
+    - Polymorphism lets us write code to call a method, but at runtime, this method´s behavior can be different, for different objects.
+
+    - This means the behavior that occurs, while the program is executing, depends on the runtime type of the object.
+
+    - And the runtine type, might be different from the declared type in the code.
+
+    - The declared type has to have some kind of relationship to the runtime type, and inheritance is one way to estabish this relationship.
+
+    - There are other ways, but in this video, we´ll talk about how to use inheritance, to support polymorphism.
+
+
+
+
+This time, we´re going to look at a polymorphism example, using movies.
+
+We´ll have a base class of Movie, which has the title of the movie.
+
+And Movie will have one method, watchMovie.
+
+We´ll have three subclasses, each with a different kind of movie.
+
+We´ll have and Adventure film, a Comedy, and a Science fiction movie.
+
+These are the different categories, so we´ll use these as the subclasses.
+
+All of these will override and implememt unique behavior, for the watchMovie method.
+
 
 
 
