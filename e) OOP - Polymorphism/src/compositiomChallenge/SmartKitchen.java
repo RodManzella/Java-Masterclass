@@ -47,4 +47,18 @@ public class SmartKitchen {
     public void loadDishWasher(){
         dishWasher.setHasWorkToDo(true);
     }
+
+    public void setKitchenState(boolean coffeFlag, boolean fridgeFlag, boolean dishWasherFlag){
+
+        refrigerator.setHasWorkToDo(fridgeFlag);
+        dishWasher.setHasWorkToDo(dishWasherFlag);
+        coffeeMaker.setHasWorkToDo(coffeFlag);
+
+    }
+
+    public void doKitchenWork(){
+        coffeeMaker.brewCoffee();
+        refrigerator.orderFood();
+        dishWasher.doDishes();
+    }
 }
