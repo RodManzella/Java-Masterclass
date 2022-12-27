@@ -42,3 +42,48 @@ Composition is creating a whole from different parts
     - In this case, we´re not going to allow the calling program, to acess those objects, the pargts, directly.
 
     - We don´t want anybody to acess the Monitor, Motherboatd, or ComputerCase directly.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Use Composition or Inheritance or Both
+
+    - As a general rule, when you´re designing your programs in Java, you probably want to look at composition first.
+
+    - Most of the experts will tell you, as a rule, look at using composition before implementing inheritance.
+
+    - You saw in this example, we actually used both.
+
+    - All of our parts were able to inherit a set of attributes, like the manufacturer and model.
+
+    - The calling code didn´t have to know anything about these parts, to get Personal computer to do something. It was able to tell the
+      personal computer to power up, and the personal computer delegated that work to its parts.
+
+
+Why is Composition preferred over Inheritance in many designs?
+
+    The reasons composition is preferred over inheritance:
+
+        - Composition is more flexible. You can add parts in, or remove them, and these changes are less likely to have a downstream effect.
+
+        - Composition provides functional reuse outside of the class hierarchy, meaning classes can share attributes & behavior, by having
+          similar components, instead of inheriting functionality from a parent or base class.
+
+        - Java´s inheritance breaks encapsulation, because subclasses may need direct acess to a parent´s state of behavior.
+
+        - We showed you an example of using the protected acess modifier in a previous video, and we´ll talk about why this breaks encapsulation,
+          in the next videos on encapsulation.
+
+
+
+Why is Inheritance less flexible?
+
+    - Adding a class to, or removing a class from, a class hierarchy, may impact all subclasses from that point.
+
+    - In addition, a new subclasse may not need all the functionality or attributes of its parent class.
+
+===============================================================================================================================================
+
+
+
+
+
