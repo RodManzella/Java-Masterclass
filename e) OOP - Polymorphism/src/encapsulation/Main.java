@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         
-        Player player = new Player();
+        // Player player = new Player();
         // We didn´t create a constructor in the player class, but if you recall, a default constructor with no parameters gets created for us
         // by Java. In other words, we don´t now have a constructor to pass player data when we create a new player. This means the calling
         // code needs to manually set the data in these fields.
@@ -47,7 +47,8 @@ public class Main {
         // We want the ability to ensure certain conditions are met before playing, and that acess to the player data during the game, is controlled
         // and protected.
 
-            
+        EnhancedPlayer tim = new EnhancedPlayer("Tim", 200, "Sword");
+        System.out.println(tim.healRemaining());
         
     }
     

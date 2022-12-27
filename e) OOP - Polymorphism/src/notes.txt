@@ -105,6 +105,20 @@ Everything in the class is internal, or private to it.
 
 An application programming interface, or API, is the public contract, that tells others how to use the class.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Encapsulation Principles
+
+To create an encapsulated class, you want to:
+
+    - Create constructors for object initialization, which enforces that only objects with valid data will get created.
+
+    - Use the private acess modifier for your fields.
+
+    - Use setter and getter methods sparingly, and only as neeeded
+
+    - Use acess modifiers that aren´t private, only for the methods that the calling code needs to use.
+
 
 
 
