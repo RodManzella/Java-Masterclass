@@ -38,6 +38,13 @@ public class Movie {
         // that we´re using in the Switch expression, and that´s going to give us the first letter of the type. And if that´s an A, we´ll return
         // a new Adventure instance, if it´s C, we´ll return a Comedy. Lastly, if it´s an S, that means we want to create a new Science fiction
         // movie. If it´s none of the options, we´ll just return the base class, an instance of movie.
+
+        // By providing this method, the code in the main method(the calling code), doesn´t really need to know anything about any of Movie´s
+        // subclasses. It can just pass in th type, and get a different type of Movie subclass.
+
+        // This kind of method, that returns a new instance object, is known as a factory method in software programming design patterns.
+        //Factory methods give us a way to get an object, without having to know the details of how to create a new one, or specify the exact
+        // class we want.
     }
 
     
