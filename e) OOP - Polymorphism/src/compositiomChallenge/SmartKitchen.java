@@ -6,11 +6,15 @@ public class SmartKitchen {
     private CoffeeMaker coffeeMaker;
 
     
-    public SmartKitchen(Refrigerator refrigerator, DishWasher dishWasher, CoffeeMaker coffeeMaker) {
-        this.refrigerator = refrigerator;
-        this.dishWasher = dishWasher;
-        this.coffeeMaker = coffeeMaker;
+    public SmartKitchen(){
+        refrigerator = new Refrigerator();
+        dishWasher = new DishWasher();
+        coffeeMaker = new CoffeeMaker();
     }
+
+    // When we create a smart kitchen, we´re just going to instantiate our own set of appliances, by creating our own no arguments
+    // constructor. This means that any code creating a SmartKitchen, won´t have to create the appliances individually, like we did with
+    // the personal computer example, in the previous video.
 
     
 
