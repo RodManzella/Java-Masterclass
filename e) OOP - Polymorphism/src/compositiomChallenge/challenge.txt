@@ -1,0 +1,28 @@
+In this challenge, you need to create an application for controlling a smart kitchen.
+
+Your smart kitchen will have several appliances.
+
+Your appliances will be Internet Of Things (IoT) devices, which can be programmed.
+
+It´s your job to write the code, to enable your smart kitcfhen application, to execute certain jobs.
+
+Methods on your smartKitchen class, will determine what work needs to be done:
+
+.addWater() will set the Coffee Maker´s hasWorkToDo field to true.
+
+.pourMilk() will set Refrigerator´s hasWorkToDo to true.
+
+.loadDishWasher() will set the hasWorkToDo to true, on that appliance.
+
+
+To execute the work needed to be done by the appliances, you´ll implement this in two ways:
+    
+    - First, your application will acess each appliance(by using a getter), and execute a method.
+
+    - The applicane methods are orderFood() on Refrigerator, doDishes() on DishWasher, and brewCoffee() on CoffeeMaker.
+
+    - These methods should check the hasWorkToDo flag, and if true, print a message out, about what work is being done.
+
+
+    - Second, your application won´t acess the appliances directly.
+    - it should call doKitchenWork(), which delegates the work, to any of its appliances.
