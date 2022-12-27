@@ -22,6 +22,7 @@ public class Refrigerator {
     public void orderFood(){
         if(hasWorkToDo){
             System.out.println("Food is being ordered from refrigerator!");
+            hasWorkToDo = false;
         }
     }
 

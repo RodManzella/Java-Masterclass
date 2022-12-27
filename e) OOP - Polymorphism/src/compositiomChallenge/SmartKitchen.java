@@ -5,6 +5,33 @@ public class SmartKitchen {
     private DishWasher dishWasher;
     private CoffeeMaker coffeeMaker;
 
+    
+    public SmartKitchen(Refrigerator refrigerator, DishWasher dishWasher, CoffeeMaker coffeeMaker) {
+        this.refrigerator = refrigerator;
+        this.dishWasher = dishWasher;
+        this.coffeeMaker = coffeeMaker;
+    }
+
+    
+
+    public Refrigerator getRefrigerator() {
+        return refrigerator;
+    }
+
+
+
+    public DishWasher getDishWasher() {
+        return dishWasher;
+    }
+
+
+
+    public CoffeeMaker getCoffeeMaker() {
+        return coffeeMaker;
+    }
+
+
+
     public void addWater(){
         coffeeMaker.setHasWorkToDo(true);
     }
