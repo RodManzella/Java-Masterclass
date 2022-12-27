@@ -23,6 +23,8 @@ public class Movie {
     
 }
 
+
+
 class Adventure extends Movie{
 
     public Adventure(String title){
@@ -40,5 +42,42 @@ class Adventure extends Movie{
     // %s is used to replace any String, which is not as commonly used as others as we shown you, but it will work well here.
     // And we´ve set before that %n puts a new like there. Now, this string gets repeated three times with this repeat method before the
     // formatting takes place. This means that all these stage plots get printed each on its own line.
+    }
+
+
+}
+
+
+class Comedy extends Movie{
+
+    public Comedy(String title){
+        super(title);
+    }
+
+    @Override
+    public void watchMovie(){
+        super.watchMovie();
+        System.out.printf("..%s%n".repeat(3),
+                                "Something funny happens",
+                                "Something even funnier happens",
+                                "Happy Ending");
+    
+    }
+}
+
+class ScienceFiction extends Movie{
+
+    public ScienceFiction(String title){
+        super(title);
+    }
+
+    @Override
+    public void watchMovie(){
+        super.watchMovie();
+        System.out.printf("..%s%n".repeat(3),
+                                "Bad Aliens do Bad Stuff",
+                                "Space Guys chase Aliens",
+                                "Plane Blows Up");
+    
     }
 }
