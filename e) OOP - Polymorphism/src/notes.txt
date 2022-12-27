@@ -21,4 +21,24 @@ Next, let´s see how we´de use composition to create a personal computer.
 
     - And we´re modelling the has a relationshio, with the motherboard, the case, and the monitor.
 
-    
+
+
+We started talking about composition, and compared it to inheritance.
+
+Inheritance is a way to reuse functionality and attributes.
+
+Composition is a way to make the combination of classes, act like a single coherent object.
+
+
+
+
+
+Composition is creating a whole from different parts
+
+    - We built this personal computer, by passing objects to the constructor, like assembling the computer.
+
+    - We can actually hide the functionality further.
+
+    - In this case, we´re not going to allow the calling program, to acess those objects, the pargts, directly.
+
+    - We don´t want anybody to acess the Monitor, Motherboatd, or ComputerCase directly.
