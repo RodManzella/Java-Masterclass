@@ -20,6 +20,26 @@ public class Movie {
             System.out.println(title+ " is a "+ instanceType+ " film");
     }
 
+    public static Movie getMovie(String type, String title){
+
+        return switch(type.toUpperCase().charAt(0)){
+            case 'A' -> new Adventure(title);
+            case 'C' -> new Comedy(title);
+            case 'S' -> new ScienceFiction(title);
+            default -> new Movie(title);
+        };
+
+        // What are we really doing here with the switch expression? We´re taking whatever was passed to us, making it uppercase, then just
+        // getting the first letter. In our case, each of our subclasses has a unique letter for its class name, so we can use that, to figure out
+        // the right kind of movie to create. And just for now, we´re returning a generic movie instance. The watchMovie() method of Movie only
+        // prints the title and type of instance, but the overloaded methods of the subclasses do more.
+
+        // Here, our switch expression is really evaluating a char, a single character. We get this character from the String method, charAt()
+        // that we´re using in the Switch expression, and that´s going to give us the first letter of the type. And if that´s an A, we´ll return
+        // a new Adventure instance, if it´s C, we´ll return a Comedy. Lastly, if it´s an S, that means we want to create a new Science fiction
+        // movie. If it´s none of the options, we´ll just return the base class, an instance of movie.
+    }
+
     
 }
 

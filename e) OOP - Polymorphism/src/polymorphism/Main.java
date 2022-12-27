@@ -31,6 +31,9 @@ public class Main {
         // Up until now, we´ve always had the main method, or calling code, create instances of the object. But this time, we´ll create a method
         // on the Movie class, that the calling code can execute, that will return a movie instance for us. We´ll make this method public and static,
         // which means anybody can call this method to get a movie instance, based on the parameter type being passed in, and a title.
+
+        Movie theMovie3 = Movie.getMovie("Adventure", "Star Wars");
+        theMovie3.watchMovie();
     }
     
     
