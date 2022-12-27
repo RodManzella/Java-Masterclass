@@ -22,3 +22,23 @@ public class Movie {
 
     
 }
+
+class Adventure extends Movie{
+
+    public Adventure(String title){
+        super(title);
+    }
+
+    @Override
+    public void watchMovie(){
+        super.watchMovie();
+        System.out.printf("..%s%n".repeat(3),
+                                "Pleasant Scene",
+                                "Scary Music",
+                                "Something Bad Happens");
+    // Let´s talk about this code, because here we´re using format specifiers %s and %n
+    // %s is used to replace any String, which is not as commonly used as others as we shown you, but it will work well here.
+    // And we´ve set before that %n puts a new like there. Now, this string gets repeated three times with this repeat method before the
+    // formatting takes place. This means that all these stage plots get printed each on its own line.
+    }
+}
