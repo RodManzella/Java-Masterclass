@@ -150,6 +150,24 @@ These are the different categories, so we´ll use these as the subclasses.
 
 All of these will override and implememt unique behavior, for the watchMovie method.
 
+=============================================================================================================================================
+
+Polymorphism in action
+
+That was polymorphism in action.
+
+It´s the ability to execute different behavior, for different types, which are determined at runtime.
+
+And yet, we did it with just two statements in the main method, as shown here:
+
+    - Movie movie = Movie.getMovie(type, title);
+
+    - movie.watchMovie();
+
+Polymorphism enables you to write generic code, based on the base class, or a parent class.
+
+And this code, in the main method, is extendable, emaning it doesn´t have to change, as new subclasses become available.
+
 
 
 
