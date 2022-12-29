@@ -115,6 +115,49 @@ public class NextMain {
         //  - It can´t be used without an assignment, because the type can´t be inferred in that case
         //  - It can´t be assigned a null literal, again because a type can´t be inferred in that case.
 
+       // We can test to see what the actual object is, at runtime, in several different ways.
+
+       // First, we can use an if statement, to see what the class name of the object, coming back from that method is, when this code is running.
+
+       Object unknownObject = Movie.getMovie("C", "Airplane");
+
+       if(unknownObject.getClass().getSimpleName() ==  "Comedy"){
+            Comedy c = (Comedy) unknownObject;
+            c.watchComedy();
+       }else if(unknownObject instanceof Adventure){
+            ((Adventure)unknownObject).watchAdventure();
+       }else if(unknownObject instanceof ScienceFiction syfy){
+            syfy.watchScienceFiction();
+       }
+
+       // Here, in this if statement, we´re using a method called getClass. We´ve used this getClass method before, in the Movie class´s,
+       // watchMovie method. But in that case, we used it if the keyword this, whereas here, we are simply calling it, on the local variable
+       // reference, unkownObject. This method is available to any instance, because it´s a method on Objecty. And getSimpleName is a method
+       // that returns the class name of our instance here. This means we´re testing if the Object, coming back from that factory method, has
+       // a class name that´s Comedy. And if it does, we can cast the object to Comedy, and assign it to a Comedy variable. The reason to cast
+       // a Comedy class here is, we want to execute the method that´s specific to Comedy, watchComedy. Without casting to a Comedy class, we
+       // couldn´t execute that method.
+
+
+       // Let´s look at a better way, testing if the object comming back might be an Adventure type.(inside else if block)
+
+       // The instanceOf operator lets you test the type of an object or instance
+       // the reference variable you are testing is the left operant.
+       // the type you are testing for is the right operand    (unknownObject instanceof Adventure)
+       // It´s important to see thatyt Adventure is not in quotes, meaning we´re not testing the type name, but the actual type.
+       // This operator returns true, if unkownObject is an instance of Adventure.
+
+       // Inside the else block, we can see that we´re using a slighly different version of the instanceOf operator,that became officialy
+       // part of Java in JDK 16. This is called pattern matching support, for the instanceOf operator. If the JVM can identify that the object
+       // matches the type, it can extract data from the object, without casting.
+       // For this operator, the object can be assigned to a binding variable, which here is called syfy.
+       // from our example (unknownObject instanceof ScienceFiction syfy)
+       // The variable syfy(if the instanceOf method returns true) is already typed as a ScienceFiction variable.
+       // You can see in our code, we don´t have to create the variable in the block statement, and we don´t have to cast it.
+       
+
+       
+
 
         
     }

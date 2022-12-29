@@ -204,6 +204,25 @@ Run Time vs Compile Time Typing
 
     - Each type was able to execute behavior unique to the class.
 
+============================================================================================================================================
+
+Evaluating what the runtime type is
+
+
+In the last video, we discussed the differences between the runtime type, and the compile time type.
+
+We´ve said that you can always assign an expression to a type, without casting, if you´re assigning it to a parent class, or a base type class.
+
+We´re going to show you, now, how to test what the runtime type of an object really is. 
+
+And how do we test what the runtime type of a variable really is at runtime, if the declared object is something else?
+
+We can test to see what the actual object is, at runtime, in several different ways.
+
+
+
+
+
 
 
 
