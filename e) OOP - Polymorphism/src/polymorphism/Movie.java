@@ -71,6 +71,10 @@ class Adventure extends Movie{
     // formatting takes place. This means that all these stage plots get printed each on its own line.
     }
 
+    public void watchAdventure(){
+        System.out.println("Watching an Adventure!");
+    }
+
 
 }
 
@@ -90,6 +94,10 @@ class Comedy extends Movie{
                                 "Happy Ending");
     
     }
+
+    public void watchComedy(){
+        System.out.println("Watching a Comedy!");
+    }
 }
 
 class ScienceFiction extends Movie{
@@ -106,5 +114,9 @@ class ScienceFiction extends Movie{
                                 "Space Guys chase Aliens",
                                 "Plane Blows Up");
     
+    }
+
+    public void watchScienceFiction(){
+        System.out.println("Watching a Science Fiction Thriller!");
     }
 }
