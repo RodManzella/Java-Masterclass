@@ -170,6 +170,40 @@ And this code, in the main method, is extendable, emaning it doesn´t have to ch
 
 This code can handle any instances that are a Movie, or a subclass of movie, that are returned from the factory method.
 
+=============================================================================================================================================
+
+Run Time vs Compile Time Typing
+
+
+    - You can think of the compile time type as the declared type
+
+    - The type is declared either as a variable reference, or a method return type, or a method parameter, for example.
+
+    - In the case of Local Variable Type Inference, we don´t declare a type for the compiled reference type, it gets inferred, but the byte
+      code is the same, as if we had declared it.
+
+    - In many cases, the compile time type, is the declared type to the left of the assignment operator.
+
+    - What is returned on the right side of the assignment operaotr, from whatever expression or method is executed, sometimes can be determined
+      at runtime, when the code is executing conditionally through the statements in the code.
+    
+    - You can assign a runtime instace, to a different compile time type, only if certain rules are followed
+
+    - In this course, up to now, we´ve looked at only one rule that applies, and that´s the inheritance rule.
+
+    - We can assign an instance to a variable of the same type, or a parent type, or a parent´s parent type, including java.lang.Object,
+      the ultimate base class.
+
+    - Why are runtime types different than compile time types?
+
+    - Because of polymorphism
+
+    - Polymorphism lets us write code once, in a more generic fashion, like the code we started this lecture with.
+
+    - We saw that those two lines of code, using a single compile time type of Movie, actually supported four different runtime types.
+
+    - Each type was able to execute behavior unique to the class.
+
 
 
 
