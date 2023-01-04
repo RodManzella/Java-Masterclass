@@ -23,6 +23,14 @@ public class Main {
             int arrayLength = firstTen.length;
             System.out.println("Length of array = "+arrayLength);
             System.out.println("Last = "+firstTen[arrayLength - 1]);
+
+
+            int [] newArray;
+            newArray = new int[]{5, 4, 3, 2, 1};
+
+            for(int i = 0; i < newArray.length; i++){
+                System.out.print(newArray[i]+ " ");
+            }
         }
 }
 
