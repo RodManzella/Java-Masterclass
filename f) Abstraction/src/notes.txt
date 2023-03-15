@@ -1,4 +1,4 @@
-Generalization and Abstraction
+Generalization and Abstraction:
 
         - We use the terms Abstraction and Generalization, when we start trying to model real world things in software.
 
@@ -10,7 +10,7 @@ Generalization and Abstraction
         - A base class is the most general class, the most basic building block, which everything can be said to have in common
 
     
-Abstraction
+Abstraction:
 
         - Part of generalizing is using Abstraction.
 
@@ -27,6 +27,136 @@ Abstraction
         - Abstraction simplifies the view of a set of items, traits and behaviour, so we can talk about them as a group,
           as well as generalize their functionality.
 
-Java´s support for Abstraction
+Java´s support for Abstraction:
+
+        - Java allows us to create na class Hierarchy, where the top of the Hierarchy, the base class, is usually an abstract
+          concept, whether it´s an abstract class or not.
+
+        - Java let´s us create abstract classes.
+
+        - Java gives us a way to create interfaces.
+
+
+Abstract method:
+
+        - An abstract method has a method signature, and a return type, but doesn´t have a method body.
+
+        - Because of this, we say an abstract method is unimplemented.
+
+        - It´s purpose is to describe behavior, which any object of that type will always have
+
+        - Conceptually, we can understand behaviour like move or eat on an Animal, so we might include those as abstract methods,
+          on an abstract type.
+
+        - You can think of an abstract method as a contract.
+
+        - This contract promises that all subtypes will provide the promised functionality, with the agreed upon name and arguments.
+
+Concrete method:
+
+        - A concrete method has a method body, usually with at least one statement.
+
+        - This means it has operational code, that gets executed, under the right conditions.
+
+        - A concrete method is said to implement an abstract method, if it overrides one.
+
+        - Abstract classes and interfaces can have a mix of abstract an concrete methods.
+
+
+Method modifiers:
+
+        - We have public, protected, package, and private acess modifiers as options for the members.
+
+        - In addition to acess modifiers, methods have other modifiers, which we´ll list here, as a high-level
+          introduction.
+
+          abstract: When you declared a method as abstrct, a method body is always omitted. An abstract method can only be
+                    declared on an abstract class or an interface.
+
+          static: Sometimes called a class method, rather than an instance method, because it´s called directly on the Class instance.
+
+          final: A method that is final, cannot be overriden by subclasses.
+
+          default: Only applicable on an interface.
+
+          native: This is another method with no body, but it´s very different from the abstract modifier. The method body
+                  will be implemented in platform-dependent code, typically written in another programming language, such as C.
+                  This is an advanced topic and not generally commonly used, and we won´t be covering it in this course.
+
+          synchronized: This modifier manages how multiple threads will acess the code int his method. We´ll cover this later.
+
+
+Abstract class:
+
+    - The abstract class is declared with the abstract modifier.
+
+        abstract class Animal{
+                // an abstract class is declared with the abstract modifier
+        }
+
+    - An abstract class is a class that is incomplete.
+
+        Animal a = new Animal(); // INVALID, an abstract class never gets instantiated
+
+    - An abstract class can still have a constructor,w hich will be called by its subclasses, during their construction.
+
+    - An abstract clas´s purpose, is to define the behavior it´s subclasses are required to have, so it always participates in INHERITANCE.
+
+    - For the examples in this slide, assume that Animal is an abstract class.
+
+    - Classes extend abstract classes, and can be concrete.
+
+    - Here, Dog extends Animal, Animal is abstract bug Dog is concrete.
+
+    - A class that extends an abstract class, can also be abstract itself, as i show with this next example.
+
+        abstract class Mammal extends Animal{
+                // Animal is abstract, Mammal is also abstract
+        }  
+
+        class Dog extends Animal{}  // Animal is abstract, Dog is not
+
+    - And finally an abstract class can extend a concrete class.
+
+    - Here we have BestOfBreed, an abstract class, Extending Dog, which is concrete.
+
+            abstract class BestOfBreed extends Dog{}  // Dog is not abstract, but BestOfBreed is
+
+
+What´s an abstract method?
+
+        - An abstract method is declared with the modifier abstract.
+
+        - It simply ends with a semicolon
+
+        -It doesn~t have a body
+
+
+        abstract class Animal{
+
+            public abstract void move();
+        }
+
+        - Abstract methods can only be declared on an abstract class or interface.
+
+        - An abstract methods tells the outside world, that all Animals will move, in the example shown here.
+
+
+            abstract class Animal{
+
+                public abstract void move();
+            }
+
+        - Any code that uses a subtype of Animal, knows it can call the move method, and the subtype will implement
+          this method with this signature.
+
+        - This is also true for a concrete class, and a concrete method that´s overriden
+
+        - If Animal class is abstract and it´s methods are abstract, subclasses have no longer code to inherit it from.
+
+        - Instead, the subclass must provide a concrete method for any abstract method declared on its parent.
+
+        - The subclass won´t compile if it doesn´t implement the abstract methods.
+
 
 
