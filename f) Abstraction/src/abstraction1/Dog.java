@@ -14,9 +14,9 @@ public class Dog extends Animal {
     public void move(String speed) {
         
         if(speed.equals("slow")){
-            System.out.print(type + " walking");
+            System.out.println(getExplititType() + " walking");
         }else{
-            System.out.println(type + " running");
+            System.out.println(getExplititType() + " running");
         }
     }
 
@@ -24,12 +24,12 @@ public class Dog extends Animal {
     public void makeNoise() {
         
         if(type == "Wolf"){ 
-            System.out.print("Howling!");
+            System.out.println("Howling!");
              // Here we can directly acess type, a field on the abstract class.
              // because we made the field "type" protected. We didn´t create any getters or setters on the Animal class.
              // And this protected modifier let´s subclasses use the field directly, as we show in this if condition.
         }else{
-            System.out.print("Woof!");
+            System.out.println("Woof!");
         }
     }
     
