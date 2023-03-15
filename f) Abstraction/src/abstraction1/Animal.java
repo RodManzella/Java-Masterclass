@@ -1,4 +1,4 @@
-package abstraction;
+package abstraction1;
 
 public abstract class Animal {
     
@@ -14,6 +14,9 @@ public abstract class Animal {
     }
 
     public abstract void move(String speed);
+
+    // use of abstract and private modifiers is an illegal combination. When we use abstract we´re saying subclasses
+    // have to declare this method, but if it´s private, the subclass wouldn´t even see it.
 
     public abstract void makeNoise();
 
