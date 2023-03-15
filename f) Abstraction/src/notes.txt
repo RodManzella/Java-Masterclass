@@ -185,6 +185,14 @@ Why use an abstract class?
      - An abstract class can´t be instantiated, so if you´re using abstract classes to design a framework for implementation, this is
        definitely an advantage.
 
+    - In our example, we don´t really want people creating instances of Animals or Mammals.
+
+    - We used those classes to abstract behavior, at different classification levels.
+
+    - All Animals have to implement the move and makeNoise methods, but only Mammals needed to implement shedHair, as we demonstrated.
+
+    
+
 
 
 
