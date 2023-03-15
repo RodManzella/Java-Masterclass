@@ -172,7 +172,19 @@ An abstract class doesn´t have to implement abstract methods:
     - It can also include additional abstract methods, which will force subclasses to implement both Animal´s abstract methods,
       as well as Mammal´s.
 
-      
+
+Why use an abstract class?
+
+    - In truth, you may never need to use an abstract class in your design, but there are some good arguments for using them.
+
+    - An abstract class in your hierarchy forces the designers of subclasses, tot think about, and create unique and targeted implementations,
+     for the abstracted methods.
+
+     - It may not always make sense to provide a default, or inherited implementation, of a particular method.
+
+     - An abstract class can´t be instantiated, so if you´re using abstract classes to design a framework for implementation, this is
+       definitely an advantage.
+
 
 
 
