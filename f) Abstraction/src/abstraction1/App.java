@@ -25,10 +25,17 @@ public class App {
         // In this code, we use the add method on the array list, and can pass any instance that inherits from animal.
         // It´s nice that we can have an array list of an abstracted type.
         // At runtime, instances that inherit from that abstract class, can use polymorphism to execute code specific to the concrete type.
+        animals.add(new Horse("Clydestale", "large", 1000));
 
         for (Animal animal: animals){  // Iterating through array list
             doAnimalStuff(animal);
+
+            if(animal instanceof Mammal currentMammal){
+                currentMammal.shedHair();
+            }
         }
+
+
 
     }
 

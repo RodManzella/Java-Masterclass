@@ -8,6 +8,15 @@ abstract class Mammal extends Animal{
     // we weren´t forced to create implementations for the move and makeNoise methods, like we were
     // for the Dog and Fish class. Why not?
 
+    @Override
+    public void move(String speed){
+
+        System.out.print(getExplititType() + " ");
+        System.out.println(speed.equals("slow")? "walks": "runs");
+    }
+
+    public abstract void shedHair();
+        
 }
 
 
