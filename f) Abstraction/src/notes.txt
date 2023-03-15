@@ -191,6 +191,50 @@ Why use an abstract class?
 
     - All Animals have to implement the move and makeNoise methods, but only Mammals needed to implement shedHair, as we demonstrated.
 
+
+Interface vs Abstract class:
+
+        - We saw that an abstract class requires its subclasses to implement its abstract methods.
+
+        - An interface is similar to an abstract class, although, it isn´t a class at all.
+
+        - It´s a special type, that´s more like a contract between the class and client code, that the compiler enforces
+
+        - By declaring it´s using an interface, your class must implement all the abstract methods on the interface.
+
+        - A class agrees to this, because it wants to ve known by that type, by the outside world, or the client code.
+
+        - An interface let´s classes that might have little else in common, be recognized as a special reference type.
+
+
+Declaring an interface:
+
+        - Declaring an interface is similar to declaring a class, using the keyword interface, where you wold use class.
+
+                public interface FlightEnabled{
+
+                }
+        - An interface is usually named, according to the set of behaviors it describes.
+
+        - Many interfaces will end in "able", like Comparable and Iterable, again meaning something is capable, or can do, a given set
+          of behaviours.
+
+Using an interface
+
+        - A class is associated to an interface, by using the implements clause in the class declaration.
+
+                public class Bird implements FlightEnabled{
+
+                }
+
+        - Because of this declaration, we can use FlightEnabled as the reference type, and assign it to an instance of bird.
+
+        - In this code sample, we create a new Bird object, but we assign it to the flightEnabled variable
+
+        FlightEnabled flier = new Bird();
+
+
+
     
 
 
