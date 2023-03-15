@@ -1,3 +1,4 @@
+package marathon;
 import java.util.Scanner;
 
 public class KingdomOfMatchings{
