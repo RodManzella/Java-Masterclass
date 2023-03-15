@@ -1,0 +1,32 @@
+Generalization and Abstraction
+
+        - We use the terms Abstraction and Generalization, when we start trying to model real world things in software.
+
+        - When you start modelling objects for your application, you start by identifying what features and behaviour your objects
+          have in common
+
+        - We generalize when we create a class hierarchy
+
+        - A base class is the most general class, the most basic building block, which everything can be said to have in common
+
+    
+Abstraction
+
+        - Part of generalizing is using Abstraction.
+
+        - You can generalize a set of characteristics and behavior into an abstract type.
+
+        - If you considerar an octopus, a dog, and a penguin, you would probably say they are all animals.
+
+        - An animal is really an abstract concept.
+
+        - An animal doesn´t really exist, except as a way to describe a set of more specific things
+
+        - If you can´t draw it on a piece of paper, it´s probably abstract.
+
+        - Abstraction simplifies the view of a set of items, traits and behaviour, so we can talk about them as a group,
+          as well as generalize their functionality.
+
+Java´s support for Abstraction
+
+
