@@ -4,7 +4,7 @@ package marathon;
 public class PlusOne {
     
     public static void main(String[] args) {
-        int array [] = {999};
+        int array [] = {9};
         int []arrayResposta = plusOne(array);
 
         for(int i = 0; i < arrayResposta.length; i ++){
@@ -18,14 +18,14 @@ public class PlusOne {
     public static int[] plusOne(int[] digits){
         int tam = digits.length;
         int i = tam - 1;
-        int [] specialCase;
+        int [] specialCase = {1, 0};
         
         
         
          if(digits[i] == 9){
             while(digits[i] == 9){ 
                 digits[i] = 0;
-                i--;       
+                i--;
             }
             digits[i]++;
         }
