@@ -7,6 +7,10 @@ public class PlusOne {
         int array [] = {1, 2 , 3 , 4};
         plusOne(array);
 
+        for(int n: plusOne(array)){
+            System.out.println(n);
+        }
+
                 
     }
         
