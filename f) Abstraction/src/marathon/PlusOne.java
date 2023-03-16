@@ -4,10 +4,13 @@ package marathon;
 public class PlusOne {
     
     public static void main(String[] args) {
-        int array [] = {1, 2 , 3 , 4};
-        plusOne(array);
-        
-                
+        int array [] = {999};
+        int []arrayResposta = plusOne(array);
+
+        for(int i = 0; i < arrayResposta.length; i ++){
+            System.out.println(arrayResposta[i]);
+        }
+           
     }
         
     
@@ -15,16 +18,20 @@ public class PlusOne {
     public static int[] plusOne(int[] digits){
         int tam = digits.length;
         int i = tam - 1;
-
-        if(digits[i] == 9){
-            while(array[i] == 9){
-                array[i] = 0;
-                i--;         
+        int [] specialCase;
+        
+        
+        
+         if(digits[i] == 9){
+            while(digits[i] == 9){ 
+                digits[i] = 0;
+                i--;       
             }
-        }else{
             digits[i]++;
         }
-
+        else{
+            digits[i]++;
+        }
         return digits;
     } 
               
