@@ -7,10 +7,6 @@ public class PlusOne {
         int array [] = {1, 2 , 3 , 4};
         plusOne(array);
 
-        for(int n: plusOne(array)){
-            System.out.println(n);
-        }
-
                 
     }
         
@@ -18,14 +14,15 @@ public class PlusOne {
 
     public static int[] plusOne(int[] digits){
         int tam = digits.length;
+        int i = tam - 1;
 
-        if(digits[tam - 1] == 9){
+        if(digits[i] == 9){
             while(array[i] == 9){
                 array[i] = 0;
                 i--;         
             }
         }else{
-            digits[tam - 1]++;
+            digits[i]++;
         }
 
         return digits;
